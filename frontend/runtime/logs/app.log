@@ -59323,3 +59323,515 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1527992535.773
     'REQUEST_TIME' => 1527992535
 ]
+2018-06-03 16:22:33 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT `id`, `image_slide`, `title`, `description` FROM `news` WHERE (`status`=10) AND (`is_slide`=1)
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:80
+2018-06-03 16:22:33 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=test
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:80
+2018-06-03 16:22:34 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.news' doesn't exist in D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#3 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php(80): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#9 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#10 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\program\xampp\htdocs\hung\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.news' doesn't exist
+The SQL being executed was: SELECT `id`, `image_slide`, `title`, `description` FROM `news` WHERE (`status`=10) AND (`is_slide`=1) in D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT `id`, `i...')
+#1 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#3 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php(80): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#9 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#10 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\program\xampp\htdocs\hung\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'test.news' doesn't exist
+)
+
+2018-06-03 16:22:32 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '__atuvc' => '3|23'
+    '__tawkuuid' => 'e::hungfe::Re5JfC6HK8txH4NOU/tp2BW4qoRY8Psva6wN8QyjRRnsRonQ3fW1V eOc93kXn69::2'
+    '_ga' => 'GA1.1.2053686877.1527991710'
+    '_gid' => 'GA1.1.663747571.1527991710'
+    'PHPSESSID' => '798bctf2b7au8qsf16bnrggthe'
+    '_csrf' => 'e46b6610ff41d1a03712a5d52abd08501083a301be15817fc6b782ca245ad284a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qoh3pYvek__0MMApY6las07K6zeQ-zPI\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/program/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/program/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'hungfe'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '__atuvc=3%7C23; __tawkuuid=e::hungfe::Re5JfC6HK8txH4NOU/tp2BW4qoRY8Psva6wN8QyjRRnsRonQ3fW1V+eOc93kXn69::2; _ga=GA1.1.2053686877.1527991710; _gid=GA1.1.663747571.1527991710; PHPSESSID=798bctf2b7au8qsf16bnrggthe; _csrf=e46b6610ff41d1a03712a5d52abd08501083a301be15817fc6b782ca245ad284a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qoh3pYvek__0MMApY6las07K6zeQ-zPI%22%3B%7D; TawkConnectionTime=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\npm;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at hungfe Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'hungfe'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/program/xampp/htdocs/hung/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/program/xampp/htdocs/hung/frontend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/program/xampp/htdocs/hung/frontend/web/index.php'
+    'REMOTE_PORT' => '56647'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1528017752.064
+    'REQUEST_TIME' => 1528017752
+]
+2018-06-03 16:22:34 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.news' doesn't exist in D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#3 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php(80): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#9 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#10 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\program\xampp\htdocs\hung\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.news' doesn't exist
+The SQL being executed was: SELECT `id`, `image_slide`, `title`, `description` FROM `news` WHERE (`status`=10) AND (`is_slide`=1) in D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT `id`, `i...')
+#1 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#3 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php(80): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#9 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#10 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\program\xampp\htdocs\hung\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'test.news' doesn't exist
+)
+
+2018-06-03 16:22:32 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '__atuvc' => '3|23'
+    '__tawkuuid' => 'e::hungfe::Re5JfC6HK8txH4NOU/tp2BW4qoRY8Psva6wN8QyjRRnsRonQ3fW1V eOc93kXn69::2'
+    '_ga' => 'GA1.1.2053686877.1527991710'
+    '_gid' => 'GA1.1.663747571.1527991710'
+    'PHPSESSID' => '798bctf2b7au8qsf16bnrggthe'
+    '_csrf' => 'e46b6610ff41d1a03712a5d52abd08501083a301be15817fc6b782ca245ad284a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qoh3pYvek__0MMApY6las07K6zeQ-zPI\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/program/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/program/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'hungfe'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '__atuvc=3%7C23; __tawkuuid=e::hungfe::Re5JfC6HK8txH4NOU/tp2BW4qoRY8Psva6wN8QyjRRnsRonQ3fW1V+eOc93kXn69::2; _ga=GA1.1.2053686877.1527991710; _gid=GA1.1.663747571.1527991710; PHPSESSID=798bctf2b7au8qsf16bnrggthe; _csrf=e46b6610ff41d1a03712a5d52abd08501083a301be15817fc6b782ca245ad284a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qoh3pYvek__0MMApY6las07K6zeQ-zPI%22%3B%7D; TawkConnectionTime=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\npm;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at hungfe Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'hungfe'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/program/xampp/htdocs/hung/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/program/xampp/htdocs/hung/frontend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/program/xampp/htdocs/hung/frontend/web/index.php'
+    'REMOTE_PORT' => '56647'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1528017752.064
+    'REQUEST_TIME' => 1528017752
+]
+2018-06-03 16:22:48 [127.0.0.1][-][798bctf2b7au8qsf16bnrggthe][info][yii\db\Command::query] SELECT `id`, `image_slide`, `title`, `description` FROM `news` WHERE (`status`=10) AND (`is_slide`=1)
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:80
+2018-06-03 16:22:48 [127.0.0.1][-][798bctf2b7au8qsf16bnrggthe][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hung
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:80
+2018-06-03 16:22:48 [127.0.0.1][-][798bctf2b7au8qsf16bnrggthe][info][yii\db\Command::query] SELECT * FROM `category` WHERE (`status`=10) AND (`is_display`=1) LIMIT 6
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:85
+2018-06-03 16:22:48 [127.0.0.1][-][798bctf2b7au8qsf16bnrggthe][info][yii\db\Command::query] SELECT * FROM `info_table` WHERE `id`=1
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:86
+2018-06-03 16:22:49 [127.0.0.1][-][798bctf2b7au8qsf16bnrggthe][info][yii\db\Command::query] SELECT * FROM `category` WHERE (`status`=10) AND (parent_id is null)
+    in D:\program\xampp\htdocs\hung\frontend\widgets\HeaderWidget.php:28
+    in D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php:28
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:90
+2018-06-03 16:22:49 [127.0.0.1][-][798bctf2b7au8qsf16bnrggthe][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `info_table`
+    in D:\program\xampp\htdocs\hung\frontend\widgets\HeaderWidget.php:29
+    in D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php:28
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:90
+2018-06-03 16:22:49 [127.0.0.1][-][798bctf2b7au8qsf16bnrggthe][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'info_table' AND kcu.table_name = 'info_table'
+    in D:\program\xampp\htdocs\hung\frontend\widgets\HeaderWidget.php:29
+    in D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php:28
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:90
+2018-06-03 16:22:49 [127.0.0.1][-][798bctf2b7au8qsf16bnrggthe][info][yii\db\Command::query] SELECT * FROM `info_table` WHERE `id`=1
+    in D:\program\xampp\htdocs\hung\frontend\widgets\HeaderWidget.php:29
+    in D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php:28
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:90
+2018-06-03 16:22:49 [127.0.0.1][-][798bctf2b7au8qsf16bnrggthe][info][yii\web\Session::open] Session started
+    in D:\program\xampp\htdocs\hung\frontend\widgets\Alert.php:55
+    in D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php:29
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:90
+2018-06-03 16:22:49 [127.0.0.1][-][798bctf2b7au8qsf16bnrggthe][info][yii\db\Command::query] SELECT * FROM `category` WHERE `status`=10 LIMIT 6
+    in D:\program\xampp\htdocs\hung\frontend\widgets\FooterWidget.php:26
+    in D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php:31
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:90
+2018-06-03 16:22:49 [127.0.0.1][-][798bctf2b7au8qsf16bnrggthe][info][yii\db\Command::query] SELECT * FROM `info_table` WHERE `id`=1
+    in D:\program\xampp\htdocs\hung\frontend\widgets\FooterWidget.php:27
+    in D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php:31
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:90
+2018-06-03 16:22:49 [127.0.0.1][-][798bctf2b7au8qsf16bnrggthe][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in D:\program\xampp\htdocs\hung\frontend\widgets\views\footer.php:112
+Stack trace:
+#0 D:\program\xampp\htdocs\hung\frontend\widgets\views\footer.php(112): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\program\\xamp...', 112, Array)
+#1 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\View.php(325): require('D:\\program\\xamp...')
+#2 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\program\\xamp...', Array)
+#3 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\program\\xamp...', Array, Object(frontend\widgets\FooterWidget))
+#4 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Widget.php(191): yii\base\View->render('footer', Array, Object(frontend\widgets\FooterWidget))
+#5 D:\program\xampp\htdocs\hung\frontend\widgets\FooterWidget.php(30): yii\base\Widget->render('footer', Array)
+#6 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Widget.php(98): frontend\widgets\FooterWidget->run()
+#7 D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php(31): yii\base\Widget::widget()
+#8 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\View.php(325): require('D:\\program\\xamp...')
+#9 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\program\\xamp...', Array)
+#10 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('D:\\program\\xamp...', Array, Object(frontend\controllers\SiteController))
+#11 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="mot...')
+#12 D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php(90): yii\base\Controller->render('index', Array)
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#17 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#18 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\program\xampp\htdocs\hung\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2018-06-03 16:22:48 [127.0.0.1][-][798bctf2b7au8qsf16bnrggthe][info][application] $_COOKIE = [
+    '__atuvc' => '3|23'
+    '__tawkuuid' => 'e::hungfe::Re5JfC6HK8txH4NOU/tp2BW4qoRY8Psva6wN8QyjRRnsRonQ3fW1V eOc93kXn69::2'
+    '_ga' => 'GA1.1.2053686877.1527991710'
+    '_gid' => 'GA1.1.663747571.1527991710'
+    'PHPSESSID' => '798bctf2b7au8qsf16bnrggthe'
+    '_csrf' => 'e46b6610ff41d1a03712a5d52abd08501083a301be15817fc6b782ca245ad284a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qoh3pYvek__0MMApY6las07K6zeQ-zPI\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/program/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/program/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'hungfe'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '__atuvc=3%7C23; __tawkuuid=e::hungfe::Re5JfC6HK8txH4NOU/tp2BW4qoRY8Psva6wN8QyjRRnsRonQ3fW1V+eOc93kXn69::2; _ga=GA1.1.2053686877.1527991710; _gid=GA1.1.663747571.1527991710; PHPSESSID=798bctf2b7au8qsf16bnrggthe; _csrf=e46b6610ff41d1a03712a5d52abd08501083a301be15817fc6b782ca245ad284a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qoh3pYvek__0MMApY6las07K6zeQ-zPI%22%3B%7D; TawkConnectionTime=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\npm;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at hungfe Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'hungfe'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/program/xampp/htdocs/hung/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/program/xampp/htdocs/hung/frontend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/program/xampp/htdocs/hung/frontend/web/index.php'
+    'REMOTE_PORT' => '56653'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1528017768.702
+    'REQUEST_TIME' => 1528017768
+]
+2018-06-03 16:22:49 [127.0.0.1][-][798bctf2b7au8qsf16bnrggthe][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in D:\program\xampp\htdocs\hung\frontend\widgets\views\footer.php:112
+Stack trace:
+#0 D:\program\xampp\htdocs\hung\frontend\widgets\views\footer.php(112): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\program\\xamp...', 112, Array)
+#1 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\View.php(325): require('D:\\program\\xamp...')
+#2 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\program\\xamp...', Array)
+#3 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\program\\xamp...', Array, Object(frontend\widgets\FooterWidget))
+#4 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Widget.php(191): yii\base\View->render('footer', Array, Object(frontend\widgets\FooterWidget))
+#5 D:\program\xampp\htdocs\hung\frontend\widgets\FooterWidget.php(30): yii\base\Widget->render('footer', Array)
+#6 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Widget.php(98): frontend\widgets\FooterWidget->run()
+#7 D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php(31): yii\base\Widget::widget()
+#8 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\View.php(325): require('D:\\program\\xamp...')
+#9 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\program\\xamp...', Array)
+#10 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('D:\\program\\xamp...', Array, Object(frontend\controllers\SiteController))
+#11 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="mot...')
+#12 D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php(90): yii\base\Controller->render('index', Array)
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#17 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#18 D:\program\xampp\htdocs\hung\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\program\xampp\htdocs\hung\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+2018-06-03 16:22:48 [127.0.0.1][-][798bctf2b7au8qsf16bnrggthe][info][application] $_COOKIE = [
+    '__atuvc' => '3|23'
+    '__tawkuuid' => 'e::hungfe::Re5JfC6HK8txH4NOU/tp2BW4qoRY8Psva6wN8QyjRRnsRonQ3fW1V eOc93kXn69::2'
+    '_ga' => 'GA1.1.2053686877.1527991710'
+    '_gid' => 'GA1.1.663747571.1527991710'
+    'PHPSESSID' => '798bctf2b7au8qsf16bnrggthe'
+    '_csrf' => 'e46b6610ff41d1a03712a5d52abd08501083a301be15817fc6b782ca245ad284a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qoh3pYvek__0MMApY6las07K6zeQ-zPI\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/program/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/program/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'hungfe'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '__atuvc=3%7C23; __tawkuuid=e::hungfe::Re5JfC6HK8txH4NOU/tp2BW4qoRY8Psva6wN8QyjRRnsRonQ3fW1V+eOc93kXn69::2; _ga=GA1.1.2053686877.1527991710; _gid=GA1.1.663747571.1527991710; PHPSESSID=798bctf2b7au8qsf16bnrggthe; _csrf=e46b6610ff41d1a03712a5d52abd08501083a301be15817fc6b782ca245ad284a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qoh3pYvek__0MMApY6las07K6zeQ-zPI%22%3B%7D; TawkConnectionTime=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\npm;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at hungfe Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'hungfe'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/program/xampp/htdocs/hung/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/program/xampp/htdocs/hung/frontend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/program/xampp/htdocs/hung/frontend/web/index.php'
+    'REMOTE_PORT' => '56653'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1528017768.702
+    'REQUEST_TIME' => 1528017768
+]
+2018-06-03 16:26:38 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT `id`, `image_slide`, `title`, `description` FROM `news` WHERE (`status`=10) AND (`is_slide`=1)
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:80
+2018-06-03 16:26:38 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hung
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:80
+2018-06-03 16:26:38 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `category` WHERE (`status`=10) AND (`is_display`=1) LIMIT 6
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:85
+2018-06-03 16:26:38 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `info_table` WHERE `id`=1
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:86
+2018-06-03 16:26:38 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `category` WHERE (`status`=10) AND (parent_id is null)
+    in D:\program\xampp\htdocs\hung\frontend\widgets\HeaderWidget.php:28
+    in D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php:28
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:90
+2018-06-03 16:26:38 [127.0.0.1][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `info_table`
+    in D:\program\xampp\htdocs\hung\frontend\widgets\HeaderWidget.php:29
+    in D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php:28
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:90
+2018-06-03 16:26:38 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'info_table' AND kcu.table_name = 'info_table'
+    in D:\program\xampp\htdocs\hung\frontend\widgets\HeaderWidget.php:29
+    in D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php:28
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:90
+2018-06-03 16:26:38 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `info_table` WHERE `id`=1
+    in D:\program\xampp\htdocs\hung\frontend\widgets\HeaderWidget.php:29
+    in D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php:28
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:90
+2018-06-03 16:26:38 [127.0.0.1][-][-][info][yii\web\Session::open] Session started
+    in D:\program\xampp\htdocs\hung\frontend\widgets\Alert.php:55
+    in D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php:29
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:90
+2018-06-03 16:26:38 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `category` WHERE `status`=10 LIMIT 6
+    in D:\program\xampp\htdocs\hung\frontend\widgets\FooterWidget.php:26
+    in D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php:31
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:90
+2018-06-03 16:26:38 [127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `info_table` WHERE `id`=1
+    in D:\program\xampp\htdocs\hung\frontend\widgets\FooterWidget.php:27
+    in D:\program\xampp\htdocs\hung\frontend\views\layouts\main.php:31
+    in D:\program\xampp\htdocs\hung\frontend\controllers\SiteController.php:90
+2018-06-03 16:26:38 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '__atuvc' => '3|23'
+    '__tawkuuid' => 'e::hungfe::Re5JfC6HK8txH4NOU/tp2BW4qoRY8Psva6wN8QyjRRnsRonQ3fW1V eOc93kXn69::2'
+    '_ga' => 'GA1.1.2053686877.1527991710'
+    '_gid' => 'GA1.1.663747571.1527991710'
+    'PHPSESSID' => '798bctf2b7au8qsf16bnrggthe'
+    '_csrf' => 'ef4591dd77b30c2724064ca7f2d12f1e67706d12496126232849680a26e19dcea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"N-hXkf2rGzvHmeoC0pzgoqZ-Xvcgte2o\";}'
+    'TawkConnectionTime' => '0'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/program/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/program/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'hungfe'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '__atuvc=3%7C23; __tawkuuid=e::hungfe::Re5JfC6HK8txH4NOU/tp2BW4qoRY8Psva6wN8QyjRRnsRonQ3fW1V+eOc93kXn69::2; _ga=GA1.1.2053686877.1527991710; _gid=GA1.1.663747571.1527991710; PHPSESSID=798bctf2b7au8qsf16bnrggthe; _csrf=ef4591dd77b30c2724064ca7f2d12f1e67706d12496126232849680a26e19dcea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22N-hXkf2rGzvHmeoC0pzgoqZ-Xvcgte2o%22%3B%7D; TawkConnectionTime=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\npm;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 Server at hungfe Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4'
+    'SERVER_NAME' => 'hungfe'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/program/xampp/htdocs/hung/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/program/xampp/htdocs/hung/frontend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/program/xampp/htdocs/hung/frontend/web/index.php'
+    'REMOTE_PORT' => '56704'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1528017998.106
+    'REQUEST_TIME' => 1528017998
+]

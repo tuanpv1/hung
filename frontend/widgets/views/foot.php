@@ -1,59 +1,51 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: TuanPV
- * Date: 10/7/2017
- * Time: 1:30 PM
- */
-?>
-<div id="back-top-wrapper" class="visible-desktop">
-    <p id="back-top">
-        <a href="#top"><span></span></a></p>
-</div>
-<!-- begin olark code -->
-<script type='text/javascript' src='js/comment-reply.min.js?ver=4.1.18'></script>
-<script type='text/javascript' src='js/jquery.flexslider-min.js?ver=2.2.2'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var items_custom = [[0, 1], [480, 2], [768, 3], [980, 4], [1170, 5]];
-    /* ]]> */
-</script>
-<script type='text/javascript' src='js/cherry-plugin.js?ver=1.2.7'></script>
-<script type='text/javascript' src='js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var _wpcf7 = {
-        "loaderUrl": "https:\/\/livedemo00.template-help.com\/wordpress_53761\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif",
-        "sending": "Sending ..."
-    };
-    /* ]]> */
-</script>
-<script type='text/javascript' src='js/scripts.js?ver=4.1.2'></script>
-<script type='text/javascript' src='js/superfish.js?ver=1.5.3'></script>
-<script type='text/javascript' src='js/jquery.mobilemenu.js?ver=1.0'></script>
-<script type='text/javascript' src='js/jquery.magnific-popup.min.js?ver=0.9.3'></script>
-<script type='text/javascript' src='js/jplayer.playlist.min.js?ver=2.3.0'></script>
-<script type='text/javascript' src='js/jquery.jplayer.min.js?ver=2.6.0'></script>
-<script type='text/javascript' src='js/tmstickup.js?ver=1.0.0'></script>
-<script type='text/javascript' src='js/device.min.js?ver=1.0.0'></script>
-<script type='text/javascript' src='js/jquery.zaccordion.min.js?ver=2.1.0'></script>
-<script type='text/javascript' src='js/camera.min.js?ver=1.3.4'></script>
-<script type='text/javascript' src='js/jquery.debouncedresize.js?ver=1.0'></script>
-<script type='text/javascript' src='js/jquery.ba-resize.min.js?ver=1.1'></script>
-<script type='text/javascript' src='js/jquery.isotope.js?ver=1.5.25'></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-526f8b2a555eac20"></script>
+<!--Start of Tawk.to Script-->
 <script type="text/javascript">
-    deleteCookie('cf-cookie-banner');
-</script>
-<!-- this is used by many Wordpress features and for plugins to work properly -->
-<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-7078796-5']);
-    _gaq.push(['_trackPageview']);
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();</script>
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/574fa41f741c711a4860ddb7/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+<!-- Google Code dành cho Thẻ tiếp thị lại -->
+<!--
+Không thể liên kết thẻ tiếp thị lại với thông tin nhận dạng cá nhân hay đặt thẻ tiếp thị lại trên các trang có liên quan đến danh mục nhạy cảm. Xem thêm thông tin và hướng dẫn về cách thiết lập thẻ trên: http://google.com/ads/remarketingsetup
+-->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 833184628;
+    var google_custom_params = window.google_tag_params;
+    var google_conversion_label = "AGDrCMC14YIBEPTGpY0D";
+    var google_remarketing_only = true;
+
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <!--<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/833184628/?guid=ON&amp;script=0"/>-->
+        <img height="1" width="1" style="border-style:none;" alt=""
+             src="//www.googleadservices.com/pagead/conversion/833184628/?label=AGDrCMC14YIBEPTGpY0D&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107274225-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107274225-2');
+</script>

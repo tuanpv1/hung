@@ -9,117 +9,80 @@ use yii\helpers\Url;
 
 /** @var $info \common\models\Info */
 ?>
-<footer class="motopress-wrapper footer">
+<!--ARTICLE -->
+<div class="container-fluid menu_bottom">
     <div class="container">
         <div class="row">
-            <div class="span12" data-motopress-wrapper-file="wrapper/wrapper-footer.php"
-                 data-motopress-wrapper-type="footer" data-motopress-id="59ad96981aaad">
-                <div class="footer-widgets">
-                    <div class="container">
-                        <div class="row">
-                            <div class="span8 footer-divider footer-divider__right">
-                                <div class="row">
-                                    <div class="span4" data-motopress-type="dynamic-sidebar"
-                                         data-motopress-sidebar-id="footer-sidebar-1">
-                                        <div id="nav_menu-2" class="widget-footer">
-                                            <h4 class="widget-title">Quick link</h4>
-                                            <div class="menu-footer-menu-container">
-                                                <ul id="menu-footer-menu" class="menu">
-                                                    <li id="menu-item-1816"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-203 current_page_item menu-item-1816">
-                                                        <a href="<?= Url::home() ?>">Home</a>
-                                                    </li>
-                                                    <li id="menu-item-1821"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1821">
-                                                        <a href="#home-it-solution">Home IT Solutions </a>
-                                                    </li>
-                                                    <li id="menu-item-1820"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1819">
-                                                        <a href="<?= Url::to(['site/list-category']) ?>">Business IT
-                                                            Solutions</a>
-                                                    </li>
-                                                    <li id="menu-item-1822"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1819">
-                                                        <a href="<?= Url::to(['site/index']) ?>#contact">Contact</a>
-                                                    </li>
-                                                    <li id="menu-item-1821"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1821">
-                                                        <a href="<?= Url::to(['site/about']) ?>">About</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="span4" data-motopress-type="dynamic-sidebar"
-                                         data-motopress-sidebar-id="footer-sidebar-4">
-                                        <div id="categories-2" class="widget-footer">
-                                            <h4 class="widget-title">Service</h4>
-                                            <ul>
-                                                <?php
-                                                if ($listCategory) {
-                                                    foreach ($listCategory as $item) {
-                                                        /** @var $item \common\models\Category */
-                                                        ?>
-                                                        <li class="cat-item cat-item-<?= $item->id ?>"><a
-                                                                    href="<?= Url::to(['site/index-news', 'category_id' => $item->id]) ?>"><?= $item->display_name ?></a>
-                                                        </li>
-                                                        <?php
-                                                    }
-                                                }
-                                                ?>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="span4 footer-divider">
-                                <div data-motopress-type="static"
-                                     data-motopress-static-file="static/static-extra.php">
-                                    <div class="contacts">
-                                        <h4 class="widget-title">Address</h4>
-                                        <span class="address"><?= $info ? $info->address : 'Updating ... ' ?></span>
-                                        <span class="pull-right">
-                                            <h4 class="widget-title">Phone</h4>
-                                            <span class="phones">
-                                            <span class="phone"><?= $info ? $info->phone : 'Updating ... ' ?></span>
-                                                <br></br>
-                                                <h4 class="widget-title">Trading hours</h4>
-                                                <span class="hours">Mon-Sat 9:00 am to 9:00 pm		</span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="social-nets-wrapper" data-motopress-type="static"
-                                     data-motopress-static-file="static/static-social-networks.php">
-                                    <h4 class="widget-title">Follow us</h4>
-                                    <ul class="social">
-                                        <li><a href="https://www.facebook.com/Ht-Tech-1487669748201250/?modal=admin_todo_tour" title="facebook"><i class="icon-facebook"></i></a></li>
-                                        <li><a href="https://twitter.com/httechptyltd" title="twitter"><i class="icon-twitter"></i></a></li>
-                                        <li><a href="https://plus.google.com/u/1/114308002043787052598?pageId=none" title="google"><i class="icon-google-plus"></i></a></li>
-                                        <li><a href="https://www.instagram.com/httechptyltd/" title="instagram"><i class="icon-instagram"></i></a></li>
-                                        <li><a href="#" title="skype"><i class="icon-skype"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row copyright">
-                            <div class="span6" data-motopress-type="static"
-                                 data-motopress-static-file="static/static-footer-text.php">
-                                <div id="footer-text" class="footer-text">
-                                    <a href="<?= Url::home() ?>" title=""
-                                       class="site-name"></a> &copy; HT-TECH Pty Ltd | ABN 85589099156
-                                    <a href="<?= Url::home() ?>" title="<?= $info->title ?>">All Rights
-                                        Reserved.</a>
-                                </div>
-                            </div>
-                            <div class="span6" data-motopress-type="static"
-                                 data-motopress-static-file="static/static-footer-nav.php">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div id="dt-menu-toggle" class="dt-menu-toggle2 dt-menu-toggle">
+                Menu <span class="dt-menu-toggle-icon"></span>
+            </div>
+            <ul class="menu menu2">
+                <li class="active_menu"><a href="http://dicom.vn/">Trang chủ</a></li>
+                <li class=""><a href="http://dicom.vn/gioi-thieu.html">Giới thiệu </a></li>
+                <li class=""><a href="http://dicom.vn/trai-nghiem.html">Trải nghiệm</a></li>
+                <li class=""><a href="http://dicom.vn/#san-pham-pr1">Sản phẩm</a></li>
+                <li class=""><a href="http://dicom.vn/tin-tuc.html">Tin tức</a></li>
+                <li class=""><a href="http://dicom.vn/ho-tro-ki-thuat.html">Hỗ trợ kĩ thuật</a></li>
+                <li class=""><a href="http://dicom.vn/giai-phap-tong-the.html">Giải pháp tổng thể</a></li>
+                <li class=""><a href="http://dicom.vn/tu-thiet-ke.html">Tự thiết kế</a></li>
+                <li class=""><a href="http://dicom.vn/lien-he.html">Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container-fluid footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p style="text-align: center;">
+                    <span style="color:#000000;"><span style="font-size: 24px;"><strong>C&Ocirc;NG TY TNHH C&Ocirc;NG NGHỆ DICOM</strong></span></span>
+                </p>
+                <p style="text-align: center;">
+                    <img alt="" src="http://dicom.vn/upload/images/icon/DICOM_23(1).png"
+                         style="width: 25px; height: 22px;"/>Tầng 15, Center Building, Số 1 Nguyễn Huy Tưởng, Thanh Xu&acirc;n,
+                    H&agrave; Nội</p>
+                <p style="text-align: center;">
+                    <img alt="" src="http://dicom.vn/upload/images/icon/DICOM_30.png"
+                         style="width: 19px; height: 17px;"/>:+84 24 22213077 &nbsp; &nbsp;&nbsp;<img alt=""
+                                                                                                      src="http://dicom.vn/upload/images/icon/DICOM_33.png"
+                                                                                                      style="width: 25px; height: 19px;"/>&nbsp;:+84:
+                    24 22213078 &nbsp; <img alt="" src="http://dicom.vn/upload/images/icon/DICOM_27.png"
+                                            style="width: 22px; height: 16px;"/>: info@dicom.com.vn</p>
+                <p style="text-align: center;">
+                    <img alt="" src="http://dicom.vn/upload/images/icon/DICOM_23(1).png"
+                         style="width: 25px; height: 22px;"/>&nbsp;Tầng 7, t&ograve;a nh&agrave; Gic, 207B Ho&agrave;ng
+                    Văn Thụ, Phường 8, Quận Ph&uacute; Nhuận, Th&agrave;nh phố Hồ Ch&iacute; Minh</p>
+                <p style="text-align: center;">
+                    <img alt="" src="http://dicom.vn/upload/images/icon/DICOM_30.png"
+                         style="width: 19px; height: 17px;"/>:+84 28 22533501 &nbsp; &nbsp;&nbsp;<img alt=""
+                                                                                                      src="http://dicom.vn/upload/images/icon/DICOM_33.png"
+                                                                                                      style="width: 25px; height: 19px;"/>&nbsp;:+84
+                    28 22533502 &nbsp;<img alt="" src="http://dicom.vn/upload/images/icon/DICOM_27.png"
+                                           style="width: 22px; height: 16px;"/>: info@dicom.com.vn</p>
             </div>
         </div>
     </div>
-</footer>
+    <div class="container bottom_footer2">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="bottom_footer"></div>
+            </div>
+            <div class="col-md-6 left_ftoooter">
+                <ul class="social_bottom">
+                    <li><a href="https://www.facebook.com/Dicom-Smarthome-379567055550342/?fref=ts" target="_blank"><img
+                                    src="images/face1-min.png" alt="Facebook"/></a></li>
+                    <li><a href="https://www.facebook.com/FacebookVietnam" target="_blank"><img
+                                    src="images/twi1-min.png" alt="Twitter"/></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCxJYFaIEY99YvxK2m0CNDEw" target="_blank"><img
+                                    src="images/you1-min.png" alt="Youtube"/></a></li>
+                    <li>
+                        <a href="https://plus.google.com/114805154313563931884/about?_ga=1.217388630.1330760275.1476754655"
+                           target="_blank"><img src="images/gg1-min.png" alt="Google+"/></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+
+            </div>
+        </div>
+    </div>
+</div>

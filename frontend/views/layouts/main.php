@@ -22,7 +22,7 @@ AppAsset::register($this);
     <?= \frontend\widgets\Head::widget() ?>
     <?php $this->head() ?>
 </head>
-<body class="home page page-id-203 page-template page-template-page-home page-template-page-home-php olrk-live-chat">
+<body class="index-c">
 <?php $this->beginBody() ?>
 <div id="motopress-main" class="main-holder">
     <?= \frontend\widgets\HeaderWidget::widget() ?>
