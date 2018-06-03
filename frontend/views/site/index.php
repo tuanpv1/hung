@@ -1,213 +1,69 @@
 <?php
 
+use common\models\News;
 use frontend\widgets\SlideWidget;
+use yii\helpers\Url;
+
 ?>
 <?= SlideWidget::widget() ?>
 <!-- ABOUT US -->
-<div class="container-fluid about box_fix">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="images_about">
-                    <div class="images_about_innder">
-                        <a href="http://dicom.vn/gioi-thieu.html">
-                            <img src="http://dicom.vn/upload/images/about/2.GIOI%20THIEU/nha-thong-minh-dicom%20(1).png"
-                                 alt="Nhà thông minh Dicom"/>
-                        </a>
+<?php if ($about) {
+    /** @var News $about */ ?>
+    <div class="container-fluid about box_fix">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="images_about">
+                        <div class="images_about_innder">
+                            <a href="<?= Url::to(['site/about']) ?>">
+                                <img src="<?= $about->getImageLink() ?>"
+                                     alt="<?= $about->title ?>"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 intro_about">
-                <p class="title_about"><a href="http://dicom.vn/gioi-thieu#about">Nhà thông minh Dicom</a></p>
-                <div class="intro_about_inner">
-                    <p>
-                        <span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 16px; text-align: justify; background-color: rgb(247, 247, 251);">Nh&agrave; th&ocirc;ng minh Dicom l&agrave; hệ thống c&aacute;c giải ph&aacute;p tự động cho ng&ocirc;i nh&agrave; để điều khiển v&agrave; gi&aacute;m s&aacute;t hầu hết c&aacute;c thiết bị điện như đ&egrave;n, r&egrave;m, &acirc;m thanh, tivi, điều h&ograve;a, n&oacute;ng lạnh, an ninh cảnh b&aacute;o... gi&uacute;p cho cuộc sống trở n&ecirc;n tiện nghi, an to&agrave;n v&agrave; tiết kiệm...</span>
-                    </p>
-                </div>
-                <div class="button_about">
-                    <a href="http://dicom.vn/gioi-thieu#about">Về Dicom IOT</a>
+                <div class="col-md-6 intro_about">
+                    <p class="title_about"><a href="<?= Url::to(['site/about']) ?>"><?= $about->title ?></a></p>
+                    <div class="intro_about_inner">
+                        <p>
+                            <?= $about->description ?>
+                        </p>
+                    </div>
+                    <div class="button_about">
+                        <a href="<?= Url::to(['site/about']) ?>">Xem chi tiết</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+<?php } ?>
 <!-- ABOUT US -->
 <!--PRODUCT-->
-<div class="container-fluid product_index box_fix" id="san-pham-pr1">
+<div class="container-fluid product_index box_fix" id="list-products">
     <div class="container">
         <div class="row">
-            <!-- <h2 class="title_gp"><a>Sản phẩm</a></h2> -->
             <h2 class="title_gp"><a>DANH MỤC SẢN PHẨM</a></h2>
             <ul class="ul-product-index">
-                <li class="item-product-index">
-                    <h2><a href="http://dicom.vn/bo-dieu-khien-trung-tam-nha-thong-minh-pr2.html">Bộ điều khiển trung
-                            tâm nhà thông minh</a></h2>
-                    <div class="img-item">
-                        <a href="http://dicom.vn/bo-dieu-khien-trung-tam-nha-thong-minh-pr2.html">
-                            <img src="http://dicom.vn/upload/images/sanpham/Homegate/bo-dieu-khien-trung-tam-011.png"
-                                 class="img-responsive"/>
-                        </a>
-                    </div>
-                    <div class="des">
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://dicom.vn/bo-dieu-khien-trung-tam-nha-thong-minh-pr2.html">Tại sao có thể
-                                điều khiển thiết bị bằng điện thoại??</a></p>
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://dicom.vn/bo-dieu-khien-trung-tam-nha-thong-minh-pr2.html">Cách lập trình một
-                                ngôi nhà thông minh?</a></p>
-                    </div>
-
-                    <a href="http://dicom.vn/bo-dieu-khien-trung-tam-nha-thong-minh-pr2.html" class="view-detial">Xem
-                        chi tiết</a>
-                </li>
-                <li class="item-product-index">
-                    <h2><a href="http://dicom.vn/bo-dieu-khien-thong-minh-da-nang-d-switch-pr3.html">Bộ điều khiển thông
-                            minh đa năng D-Switch </a></h2>
-                    <div class="img-item">
-                        <a href="http://dicom.vn/bo-dieu-khien-thong-minh-da-nang-d-switch-pr3.html">
-                            <img src="http://dicom.vn/upload/images/sanpham/D-Switch/bo-dieu-khien-thong-minh-da-nang-d-switch-011.png"
-                                 class="img-responsive"/>
-                        </a>
-                    </div>
-                    <div class="des">
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://dicom.vn4u.vn/d-switch-rem-sp15.html">Kết nối với hầu hết các thiết bị
-                                điện</a></p>
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://dicom.vn4u.vn/d-switch-rem-sp15.html">Hỗ trợ bật, tắt thủ công </a></p>
-                    </div>
-
-                    <a href="http://dicom.vn/bo-dieu-khien-thong-minh-da-nang-d-switch-pr3.html" class="view-detial">Xem
-                        chi tiết</a>
-                </li>
-                <li class="item-product-index">
-                    <h2><a href="http://dicom.vn/phim-cam-ung-d-touch-pr5.html">Phím cảm ứng D-Touch</a></h2>
-                    <div class="img-item">
-                        <a href="http://dicom.vn/phim-cam-ung-d-touch-pr5.html">
-                            <img src="http://dicom.vn/upload/images/sanpham/Touch%20Switch/phim-cam-ung-thong-minh-da-nang-d-touch-1-011-01.png"
-                                 class="img-responsive"/>
-                        </a>
-                    </div>
-                    <div class="des">
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://dicom.vn4u.vn/d-switch-an-ninh-canh-bao-sp36.html">Điều khiển thiết bị theo
-                                kịch bản </a></p>
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://dicom.vn4u.vn/d-switch-an-ninh-canh-bao-sp36.html">Thiết kế mặt kính sang
-                                trọng, hiện đại</a></p>
-                    </div>
-
-                    <a href="http://dicom.vn/phim-cam-ung-d-touch-pr5.html" class="view-detial">Xem chi tiết</a>
-                </li>
-                <li class="item-product-index">
-                    <h2><a href="http://dicom.vn/he-thong-am-thanh-khon-pr6.html">Hệ Thống Âm Thanh Không Dây </a></h2>
-                    <div class="img-item">
-                        <a href="http://dicom.vn/he-thong-am-thanh-khon-pr6.html">
-                            <img src="http://dicom.vn/upload/images/sanpham/Loa%20EISSOUND/he-thong-am-thanh-dicom-011.png"
-                                 class="img-responsive"/>
-                        </a>
-                    </div>
-                    <div class="des">
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://dicom.vn/am-thanh-bluetooth-gan-tuong-5-sp5.html">Điều khiển âm thanh qua
-                                Bluetooth/Wifi</a></p>
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://dicom.vn/dieu-khien-am-thanh-wifi-sp45.html">Ứng dụng cho hệ thống âm thanh
-                                đa vùng</a></p>
-                    </div>
-
-                    <a href="http://dicom.vn/he-thong-am-thanh-khon-pr6.html" class="view-detial">Xem chi tiết</a>
-                </li>
-                <li class="item-product-index">
-                    <h2><a href="http://dicom.vn/phim-cam-ung-d-touch-hr-pr22.html">Phím cảm ứng D-Touch HR</a></h2>
-                    <div class="img-item">
-                        <a href="http://dicom.vn/phim-cam-ung-d-touch-hr-pr22.html">
-                            <img src="http://dicom.vn/upload/images/sanpham/Touch%20Switch/phim-cam-ung-thong-minh-dtouch-hr-dicom-smarthome.png"
-                                 class="img-responsive"/>
-                        </a>
-                    </div>
-                    <div class="des">
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://dicom.vn4u.vn/d-switch-an-ninh-canh-bao-sp36.html">Điều khiển thiết bị theo
-                                kịch bản</a></p>
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://dicom.vn4u.vn/d-switch-an-ninh-canh-bao-sp36.html">Thiết kế mặt kính sang
-                                trọng, hiện đại</a></p>
-                    </div>
-
-                    <a href="http://dicom.vn/phim-cam-ung-d-touch-hr-pr22.html" class="view-detial">Xem chi tiết</a>
-                </li>
-                <li class="item-product-index">
-                    <h2><a href="http://dicom.vn/bo-dieu-chinh-anh-sang-d-dim-pr23.html">Bộ điều chỉnh ánh sáng
-                            D-Dim</a></h2>
-                    <div class="img-item">
-                        <a href="http://dicom.vn/bo-dieu-chinh-anh-sang-d-dim-pr23.html">
-                            <img src="http://dicom.vn/upload/images/sanpham/Touch%20Switch/dieu-chinh-anh-sang-thong-minh-d-dim-1.png"
-                                 class="img-responsive"/>
-                        </a>
-                    </div>
-                    <div class="des">
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="0">Điều chỉnh tăng giảm độ sáng cho ngôi nhà</a></p>
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="0">Thiết kế mặt kính sang trọng</a></p>
-                    </div>
-
-                    <a href="http://dicom.vn/bo-dieu-chinh-anh-sang-d-dim-pr23.html" class="view-detial">Xem chi
-                        tiết</a>
-                </li>
-                <li class="item-product-index">
-                    <h2><a href="http://dicom.vn/o-cam-dien-d-socket-pr24.html">Ổ cắm điện D-Socket</a></h2>
-                    <div class="img-item">
-                        <a href="http://dicom.vn/o-cam-dien-d-socket-pr24.html">
-                            <img src="http://dicom.vn/upload/images/sanpham/Touch%20Switch/o-cam-d-socket-hien-dai-01.png"
-                                 class="img-responsive"/>
-                        </a>
-                    </div>
-                    <div class="des">
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="0">Quản lý các thiết bị sử dụng phích cắm</a></p>
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="0">Thiết kế an toàn, sang trọng</a></p>
-                    </div>
-
-                    <a href="http://dicom.vn/o-cam-dien-d-socket-pr24.html" class="view-detial">Xem chi tiết</a>
-                </li>
-                <li class="item-product-index">
-                    <h2><a href="http://dicom.vn/dieu-khien-hong-ngoai-pr25.html">Điều khiển hồng ngoại DIR</a></h2>
-                    <div class="img-item">
-                        <a href="http://dicom.vn/dieu-khien-hong-ngoai-pr25.html">
-                            <img src="http://dicom.vn/upload/images/sanpham/Cam%20bien/irr.png" class="img-responsive"/>
-                        </a>
-                    </div>
-                    <div class="des">
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="0">Điều khiển các thiết bị hồng ngoại </a></p>
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="0">Điều khiển thiết bị mọi lúc mọi nơi</a></p>
-                    </div>
-
-                    <a href="http://dicom.vn/dieu-khien-hong-ngoai-pr25.html" class="view-detial">Xem chi tiết</a>
-                </li>
-                <li class="item-product-index">
-                    <h2><a href="http://dicom.vn/he-thong-an-ninh-giam-sat-pr21.html">Hệ thống An Ninh Giám Sát</a></h2>
-                    <div class="img-item">
-                        <a href="http://dicom.vn/he-thong-an-ninh-giam-sat-pr21.html">
-                            <img src="http://dicom.vn/upload/images/sanpham/Camera/he-thong-an-ninh-giam-sat-dicom-01.png"
-                                 class="img-responsive"/>
-                        </a>
-                    </div>
-                    <div class="des">
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://dicom.vn4u.vn/d-switch-an-ninh-canh-bao-sp36.html">Kết nối với hầu hết cảm
-                                biến</a></p>
-                        <p><i class="fa fa-caret-right" aria-hidden="true"></i>
-                            <a href="http://dicom.vn4u.vn/d-switch-rem-sp15.html">Gửi thông báo khi phát hiện sự cố</a>
-                        </p>
-                    </div>
-
-                    <a href="http://dicom.vn/he-thong-an-ninh-giam-sat-pr21.html" class="view-detial">Xem chi tiết</a>
-                </li>
+                <?php if ($listProducts) {
+                    /** @var News $product */
+                    foreach ($listProducts as $product) {
+                        ?>
+                        <li class="item-product-index">
+                            <h2>
+                                <a href="<?= Url::to(['site/detail-product', 'id' => $product->id]) ?>"><?= $product->title ?></a>
+                            </h2>
+                            <div class="img-item">
+                                <a href="<?= Url::to(['site/detail-product', 'id' => $product->id]) ?>">
+                                    <img src="<?= $product->getImageLink() ?>" class="img-responsive"/>
+                                </a>
+                            </div>
+                            <div class="des"><?= $product->description ?></div>
+                            <a href="<?= Url::to(['site/detail-product', 'id' => $product->id]) ?>" class="view-detial">Xem
+                                chi tiết</a>
+                        </li>
+                        <?php
+                    }
+                } ?>
             </ul>
         </div>
     </div>

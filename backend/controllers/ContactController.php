@@ -30,21 +30,6 @@ class ContactController extends Controller
     }
 
     /**
-     * Lists all Contact models.
-     * @return mixed
-     */
-    public function actionIndex()
-    {
-        $searchModel = new ContactSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
-    }
-
-    /**
      * Displays a single Contact model.
      * @param integer $id
      * @return mixed

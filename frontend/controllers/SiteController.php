@@ -75,15 +75,18 @@ class SiteController extends Controller
     public function actionIndex()
     {
 
-        $listSolution = Category::find()
-            ->andWhere(['status' => Category::STATUS_ACTIVE])
-            ->andWhere(['is_display' => Category::STATUS_DISPLAY])
-            ->limit(6)
+        $about = News::findOne(['type' => News::TYPE_ABOUT,'status' => News::STATUS_ACTIVE]);
+        $listProducts = News::find()
+            ->andWhere(['type' => News::TYPE_PRODUCT])
+            ->andWhere(['status' => News::STATUS_ACTIVE])
+            ->andWhere(['is_hot' => News::IS_HOT])
+            ->limit(12)
             ->all();
         $info = Info::findOne(['id' => Info::ID]);
         return $this->render('index', [
-            'listSolution' => $listSolution,
             'info' => $info,
+            'about' => $about,
+            'listProducts' => $listProducts,
         ]);
     }
 
@@ -132,7 +135,7 @@ class SiteController extends Controller
 
     public function actionAbout()
     {
-        $info = Info::findOne(['id' => Info::ID]);
+        $info = News::findOne(['type' => News::TYPE_ABOUT,'status' => News::STATUS_ACTIVE]);
         return $this->render('about', ['new' => $info]);
     }
 

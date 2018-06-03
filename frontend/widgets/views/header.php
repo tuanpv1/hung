@@ -23,7 +23,7 @@ use yii\helpers\Url;
                 <ul class="menu menu1">
                     <li class="active_menu"><a href="<?= Url::home() ?>">Trang chủ</a></li>
                     <li class=""><a href="<?= Url::to(['site/about']) ?>">Giới thiệu </a></li>
-                    <li class=""><a href="<?= Url::to(['site/product']) ?>">Sản phẩm</a></li>
+                    <li class=""><a href="<?= Url::home() ?>#list-products">Sản phẩm</a></li>
                     <li class=""><a href="<?= Url::to(['site/support-it']) ?>">Hỗ trợ kĩ thuật</a></li>
                     <li class=""><a href="<?= Url::to(['site/contact']) ?>">Liên hệ</a></li>
                 </ul>
