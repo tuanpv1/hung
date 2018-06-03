@@ -1,0 +1,1672 @@
+/*  CUSTOM RESPONSIVE */
+@media only screen and (min-width: 1200px) and (max-width: 1366px) {
+    .container {
+
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .hidden_mobile {
+        display: none;
+    }
+
+    .show_mobile {
+        display: block;
+    }
+
+    .left_list_img li {
+        margin-right: 10px;
+    }
+
+    .cell_cat {
+        float: left;
+        width: 150px;
+        height: 150px;
+        margin: 10px auto 0px auto;
+    }
+
+    .two_cell {
+        float: right;
+        width: 150px;
+        height: 150px;
+        margin: 10px auto 0px auto;
+    }
+
+    .name_product {
+        font-size: 20px;
+    }
+
+    .title_pjdone, .title_art_index_w {
+        font-size: 14px;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .menu_fix {
+        height: auto;
+    }
+
+    .text_tn a {
+        font-size: 16px;
+    }
+
+    .text_tn {
+        margin-top: 20px;
+    }
+
+    .button_about a:last-child {
+        float: none;
+    }
+
+    .title_slide_index {
+        font-size: 30px;
+    }
+
+    .button_header {
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .tit_small_index {
+        font-size: 15px;
+    }
+
+    .button_header a {
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        width: 120px;
+    }
+
+    .dt-menu-toggle {
+        color: #ffffff;
+        cursor: pointer;
+        display: none;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .dt-menu-toggle {
+        background: #000 none repeat scroll 0 0;
+    }
+
+    .dt-menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu_top {
+        line-height: 37px;
+    }
+
+    .menu li {
+        float: none;
+        background: #F0F0F0;
+        color: #000;
+        width: 100%;
+        text-align: left;
+        line-height: 40px;
+        border-top: 1px solid #fff;
+    }
+
+    .menu li a {
+        color: #000;
+    }
+
+    .menu li a:hover {
+        color: #000;
+    }
+
+    .menu {
+        height: auto;
+    }
+
+    .menu_top {
+        display: inline-block;
+        height: auto;
+    }
+
+    .button_about {
+        text-align: center;
+    }
+
+    .button_about a:first-child {
+        margin-right: 0px;
+    }
+
+    .button_about a {
+        width: 90%;
+        margin: 10px auto 10px auto;
+    }
+
+    .trainghiem {
+        min-height: 100px;
+    }
+
+    .trainghiem .row {
+        min-height: 100px;
+    }
+
+    .left_pro_index {
+        width: 100%;
+        text-align: center;
+        float: none;
+        padding: 0 15px;
+    }
+
+    .right_pro_index {
+        width: 100%;
+        float: none;
+        padding: 0 15px;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .right_pro_index .col-md-4 {
+        margin-top: 20px;
+    }
+
+    .product_index, .project_done {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+
+    #pro_done {
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+        width: 100%;
+        position: static;
+        top: 10px;
+    }
+
+    .right_pro_index .carousel {
+        height: auto
+    }
+
+    .project_done .container {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .project_done > .row > img {
+        display: none;
+    }
+
+    .title_pjdone a {
+        color: #000;
+    }
+
+    .art_index {
+        display: inline-block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .art_index > .row > img {
+        display: none;
+    }
+
+    .art_index .container {
+        position: static;
+        width: 100%;
+    }
+
+    .title_art_index_w {
+        position: static;
+    }
+
+    .sup_index {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .inner_cell_pr {
+        height: 270px;
+    }
+
+    .edit_box {
+        left: -23px !important;
+        top: -159px !important;
+    }
+
+    .cell_pack {
+        width: 50%;
+        float: left;
+        text-align: center;
+        margin-right: 0px;
+        background: url("../images/arrow.png") no-repeat scroll right center;
+    }
+
+    .cell_pack a {
+        display: inline-block;
+    }
+
+    .first_cell_pack {
+        margin-top: 0px;
+    }
+
+    .cell_detail_pack_info {
+        display: none;
+    }
+
+    .table_pack {
+        width: 100%;
+    }
+
+    .count_row {
+        width: 100%;
+    }
+
+    .popup_video {
+        width: 90%;
+        top: 150px;
+        min-height: 100px;
+    }
+
+    .popup_video iframe {
+        height: 200px;
+    }
+
+    .cell_gp {
+        margin-top: 15px;
+    }
+
+    .trainghiem > .container > .row > .col-xs-12 > iframe {
+        height: 200px;
+    }
+
+    .cell_support {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .cell_support a {
+        font-size: 15px;
+    }
+
+    .cell_cat {
+        min-width: 150px;
+        display: inline-block;
+        min-height: 150px;
+    }
+
+    .two_cell {
+        float: right;
+    }
+
+    .cell_cat:hover {
+        border: 1px solid #000;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    .row_cats .row {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .title_art_list {
+        margin-top: 10px;
+    }
+
+    .images_design img {
+        max-width: 100%;
+    }
+
+    .cell_design {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu_bottom {
+        height: auto;
+        line-height: 22px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .hidden_mobile {
+        display: none;
+    }
+
+    .show_mobile {
+        display: block;
+    }
+
+    .left_list_img li {
+        margin-right: 10px;
+    }
+
+    .cell_cat {
+        float: left;
+        width: 150px;
+        height: 150px;
+        margin: 10px auto 0px auto;
+    }
+
+    .two_cell {
+        float: right;
+        width: 150px;
+        height: 150px;
+        margin: 10px auto 0px auto;
+    }
+
+    .name_product {
+        font-size: 20px;
+    }
+
+    .title_pjdone, .title_art_index_w {
+        font-size: 14px;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .menu_fix {
+        height: auto;
+    }
+
+    .text_tn a {
+        font-size: 16px;
+    }
+
+    .text_tn {
+        margin-top: 20px;
+    }
+
+    .button_about a:last-child {
+        float: none;
+    }
+
+    .title_slide_index {
+        font-size: 30px;
+    }
+
+    .button_header {
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .tit_small_index {
+        font-size: 15px;
+    }
+
+    .button_header a {
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        width: 120px;
+    }
+
+    .dt-menu-toggle {
+        color: #ffffff;
+        cursor: pointer;
+        display: none;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .dt-menu-toggle {
+        background: #ddd none repeat scroll 0 0;
+    }
+
+    .dt-menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu_top {
+        line-height: 38px;
+    }
+
+    .menu li {
+        float: none;
+        background: #F0F0F0;
+        color: #000;
+        width: 100%;
+        text-align: left;
+        line-height: 40px;
+        border-top: 1px solid #fff;
+    }
+
+    .menu li a {
+        color: #000;
+    }
+
+    .menu li a:hover {
+        color: #000;
+    }
+
+    .menu {
+        height: auto;
+    }
+
+    .menu_top {
+        display: inline-block;
+        height: auto;
+    }
+
+    .button_about {
+        text-align: center;
+    }
+
+    .button_about a:first-child {
+        margin-right: 0px;
+    }
+
+    .button_about a {
+        width: 90%;
+        margin: 10px auto 10px auto;
+    }
+
+    .trainghiem {
+        min-height: 100px;
+    }
+
+    .trainghiem .row {
+        min-height: 100px;
+    }
+
+    .left_pro_index {
+        width: 100%;
+        text-align: center;
+        float: none;
+        padding: 0 15px;
+    }
+
+    .right_pro_index {
+        width: 100%;
+        float: none;
+        padding: 0 15px;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .right_pro_index .col-md-4 {
+        margin-top: 20px;
+    }
+
+    .product_index, .project_done {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+
+    #pro_done {
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+        width: 100%;
+        position: static;
+        top: 10px;
+    }
+
+    .right_pro_index .carousel {
+        height: auto
+    }
+
+    .project_done .container {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .project_done > .row > img {
+        display: none;
+    }
+
+    .title_pjdone a {
+        color: #000;
+    }
+
+    .art_index {
+        display: inline-block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .art_index > .row > img {
+        display: none;
+    }
+
+    .art_index .container {
+        position: static;
+        width: 100%;
+    }
+
+    .title_art_index_w {
+        position: static;
+    }
+
+    .sup_index {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .inner_cell_pr {
+        height: 270px;
+    }
+
+    .edit_box {
+        left: -23px !important;
+        top: -159px !important;
+    }
+
+    .cell_pack {
+        width: 50%;
+        float: left;
+        text-align: center;
+        margin-right: 0px;
+        background: url("../images/arrow.png") no-repeat scroll right center;
+    }
+
+    .cell_pack a {
+        display: inline-block;
+    }
+
+    .first_cell_pack {
+        margin-top: 0px;
+    }
+
+    .cell_detail_pack_info {
+        display: none;
+    }
+
+    .table_pack {
+        width: 100%;
+    }
+
+    .count_row {
+        width: 100%;
+    }
+
+    .popup_video {
+        width: 90%;
+        top: 150px;
+        min-height: 100px;
+    }
+
+    .popup_video iframe {
+        height: 200px;
+    }
+
+    .cell_gp {
+        margin-top: 15px;
+    }
+
+    .trainghiem > .container > .row > .col-xs-12 > iframe {
+        height: 200px;
+    }
+
+    .cell_support {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .cell_support a {
+        font-size: 15px;
+    }
+
+    .cell_cat {
+        min-width: 150px;
+        display: inline-block;
+        min-height: 150px;
+    }
+
+    .two_cell {
+        float: right;
+    }
+
+    .cell_cat:hover {
+        border: 1px solid #000;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    .row_cats .row {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .title_art_list {
+        margin-top: 10px;
+    }
+
+    .images_design img {
+        max-width: 100%;
+    }
+
+    .cell_design {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu_bottom {
+        height: auto;
+        line-height: 22px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .hidden_mobile {
+        display: none;
+    }
+
+    .show_mobile {
+        display: block;
+    }
+
+    .left_list_img li {
+        margin-right: 10px;
+    }
+
+    .cell_cat {
+        float: left;
+        width: 150px;
+        height: 150px;
+        margin: 10px auto 0px auto;
+    }
+
+    .two_cell {
+        float: right;
+        width: 150px;
+        height: 150px;
+        margin: 10px auto 0px auto;
+    }
+
+    .name_product {
+        font-size: 20px;
+    }
+
+    .title_pjdone, .title_art_index_w {
+        font-size: 14px;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .menu_fix {
+        height: auto;
+    }
+
+    .text_tn a {
+        font-size: 16px;
+    }
+
+    .text_tn {
+        margin-top: 20px;
+    }
+
+    .button_about a:last-child {
+        float: none;
+    }
+
+    .title_slide_index {
+        font-size: 30px;
+    }
+
+    .button_header {
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .tit_small_index {
+        font-size: 15px;
+    }
+
+    .button_header a {
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        width: 120px;
+    }
+
+    .dt-menu-toggle {
+        color: #ffffff;
+        cursor: pointer;
+        display: none;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .dt-menu-toggle {
+        background: #000 none repeat scroll 0 0;
+    }
+
+    .dt-menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu_top {
+        line-height: 30px;
+    }
+
+    .menu li {
+        float: none;
+        background: #F0F0F0;
+        color: #000;
+        width: 100%;
+        text-align: left;
+        line-height: 40px;
+        border-top: 1px solid #fff;
+    }
+
+    .menu li a {
+        color: #000;
+    }
+
+    .menu li a:hover {
+        color: #000;
+    }
+
+    .menu {
+        height: auto;
+    }
+
+    .menu_top {
+        display: inline-block;
+        height: auto;
+    }
+
+    .button_about {
+        text-align: center;
+    }
+
+    .button_about a:first-child {
+        margin-right: 0px;
+    }
+
+    .button_about a {
+        width: 90%;
+        margin: 10px auto 10px auto;
+    }
+
+    .trainghiem {
+        min-height: 100px;
+    }
+
+    .trainghiem .row {
+        min-height: 100px;
+    }
+
+    .left_pro_index {
+        width: 100%;
+        text-align: center;
+        float: none;
+        padding: 0 15px;
+    }
+
+    .right_pro_index {
+        width: 100%;
+        float: none;
+        padding: 0 15px;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .right_pro_index .col-md-4 {
+        margin-top: 20px;
+    }
+
+    .product_index, .project_done {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+
+    #pro_done {
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+        width: 100%;
+        position: static;
+        top: 10px;
+    }
+
+    .right_pro_index .carousel {
+        height: auto
+    }
+
+    .project_done .container {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .project_done > .row > img {
+        display: none;
+    }
+
+    .title_pjdone a {
+        color: #000;
+    }
+
+    .art_index {
+        display: inline-block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .art_index > .row > img {
+        display: none;
+    }
+
+    .art_index .container {
+        position: static;
+        width: 100%;
+    }
+
+    .title_art_index_w {
+        position: static;
+    }
+
+    .sup_index {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .inner_cell_pr {
+        height: 270px;
+    }
+
+    .edit_box {
+        left: -23px !important;
+        top: -159px !important;
+    }
+
+    .cell_pack {
+        width: 50%;
+        float: left;
+        text-align: center;
+        margin-right: 0px;
+        background: url("../images/arrow.png") no-repeat scroll right center;
+    }
+
+    .cell_pack a {
+        display: inline-block;
+    }
+
+    .first_cell_pack {
+        margin-top: 0px;
+    }
+
+    .cell_detail_pack_info {
+        display: none;
+    }
+
+    .table_pack {
+        width: 100%;
+    }
+
+    .count_row {
+        width: 100%;
+    }
+
+    .popup_video {
+        width: 90%;
+        top: 150px;
+        min-height: 100px;
+    }
+
+    .popup_video iframe {
+        height: 200px;
+    }
+
+    .cell_gp {
+        margin-top: 15px;
+    }
+
+    .trainghiem > .container > .row > .col-xs-12 > iframe {
+        height: 200px;
+    }
+
+    .cell_support {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .cell_support a {
+        font-size: 15px;
+    }
+
+    .cell_cat {
+        min-width: 150px;
+        display: inline-block;
+        min-height: 150px;
+    }
+
+    .two_cell {
+        float: right;
+    }
+
+    .cell_cat:hover {
+        border: 1px solid #000;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    .row_cats .row {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .title_art_list {
+        margin-top: 10px;
+    }
+
+    .images_design img {
+        max-width: 100%;
+    }
+
+    .cell_design {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu_bottom {
+        height: auto;
+        line-height: 22px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .hidden_mobile {
+        display: none;
+    }
+
+    .show_mobile {
+        display: block;
+    }
+
+    .left_list_img li {
+        margin-right: 10px;
+    }
+
+    .cell_cat {
+        float: left;
+        width: 150px;
+        height: 150px;
+        margin: 10px auto 0px auto;
+    }
+
+    .two_cell {
+        float: right;
+        width: 150px;
+        height: 150px;
+        margin: 10px auto 0px auto;
+    }
+
+    .name_product {
+        font-size: 20px;
+    }
+
+    .title_pjdone, .title_art_index_w {
+        font-size: 14px;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .menu_fix {
+        height: auto;
+    }
+
+    .text_tn a {
+        font-size: 16px;
+    }
+
+    .text_tn {
+        margin-top: 20px;
+    }
+
+    .button_about a:last-child {
+        float: none;
+    }
+
+    .title_slide_index {
+        font-size: 30px;
+    }
+
+    .button_header {
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .tit_small_index {
+        font-size: 15px;
+    }
+
+    .button_header a {
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        width: 120px;
+    }
+
+    .dt-menu-toggle {
+        color: #ffffff;
+        cursor: pointer;
+        display: none;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .dt-menu-toggle {
+        background: #000 none repeat scroll 0 0;
+    }
+
+    .dt-menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu_top {
+        line-height: 30px;
+    }
+
+    .menu li {
+        float: none;
+        background: #F0F0F0;
+        color: #000;
+        width: 100%;
+        text-align: left;
+        line-height: 40px;
+        border-top: 1px solid #fff;
+    }
+
+    .menu li a {
+        color: #000;
+    }
+
+    .menu li a:hover {
+        color: #000;
+    }
+
+    .menu {
+        height: auto;
+    }
+
+    .menu_top {
+        display: inline-block;
+        height: auto;
+    }
+
+    .button_about {
+        text-align: center;
+    }
+
+    .button_about a:first-child {
+        margin-right: 0px;
+    }
+
+    .button_about a {
+        width: 90%;
+        margin: 10px auto 10px auto;
+    }
+
+    .trainghiem {
+        min-height: 100px;
+    }
+
+    .trainghiem .row {
+        min-height: 100px;
+    }
+
+    .left_pro_index {
+        width: 100%;
+        text-align: center;
+        float: none;
+        padding: 0 15px;
+    }
+
+    .right_pro_index {
+        width: 100%;
+        float: none;
+        padding: 0 15px;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .right_pro_index .col-md-4 {
+        margin-top: 20px;
+    }
+
+    .product_index, .project_done {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+
+    #pro_done {
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+        width: 100%;
+        position: static;
+        top: 10px;
+    }
+
+    .right_pro_index .carousel {
+        height: auto
+    }
+
+    .project_done .container {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .project_done > .row > img {
+        display: none;
+    }
+
+    .title_pjdone a {
+        color: #000;
+    }
+
+    .art_index {
+        display: inline-block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .art_index > .row > img {
+        display: none;
+    }
+
+    .art_index .container {
+        position: static;
+        width: 100%;
+    }
+
+    .title_art_index_w {
+        position: static;
+    }
+
+    .sup_index {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .inner_cell_pr {
+        height: 270px;
+    }
+
+    .edit_box {
+        left: -23px !important;
+        top: -159px !important;
+    }
+
+    .cell_pack {
+        width: 50%;
+        float: left;
+        text-align: center;
+        margin-right: 0px;
+        background: url("../images/arrow.png") no-repeat scroll right center;
+    }
+
+    .cell_pack a {
+        display: inline-block;
+    }
+
+    .first_cell_pack {
+        margin-top: 0px;
+    }
+
+    .cell_detail_pack_info {
+        display: none;
+    }
+
+    .table_pack {
+        width: 100%;
+    }
+
+    .count_row {
+        width: 100%;
+    }
+
+    .popup_video {
+        width: 90%;
+        top: 150px;
+        min-height: 100px;
+    }
+
+    .popup_video iframe {
+        height: 200px;
+    }
+
+    .cell_gp {
+        margin-top: 15px;
+    }
+
+    .trainghiem > .container > .row > .col-xs-12 > iframe {
+        height: 200px;
+    }
+
+    .cell_support {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .cell_support a {
+        font-size: 15px;
+    }
+
+    .cell_cat {
+        min-width: 150px;
+        display: inline-block;
+        min-height: 150px;
+    }
+
+    .two_cell {
+        float: right;
+    }
+
+    .cell_cat:hover {
+        border: 1px solid #000;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    .row_cats .row {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .title_art_list {
+        margin-top: 10px;
+    }
+
+    .images_design img {
+        max-width: 100%;
+    }
+
+    .cell_design {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu_bottom {
+        height: auto;
+        line-height: 22px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hidden_mobile {
+        display: none;
+    }
+
+    .show_mobile {
+        display: block;
+    }
+
+    .left_list_img li {
+        margin-right: 10px;
+    }
+
+    .cell_cat {
+        float: left;
+        width: 150px;
+        height: 150px;
+        margin: 10px auto 0px auto;
+    }
+
+    .two_cell {
+        float: right;
+        width: 150px;
+        height: 150px;
+        margin: 10px auto 0px auto;
+    }
+
+    .name_product {
+        font-size: 20px;
+    }
+
+    .title_pjdone, .title_art_index_w {
+        font-size: 14px;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .menu_fix {
+        height: auto;
+    }
+
+    .text_tn a {
+        font-size: 16px;
+    }
+
+    .text_tn {
+        margin-top: 20px;
+    }
+
+    .button_about a:last-child {
+        float: none;
+    }
+
+    .title_slide_index {
+        font-size: 30px;
+    }
+
+    .button_header {
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .tit_small_index {
+        font-size: 15px;
+    }
+
+    .button_header a {
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        width: 120px;
+    }
+
+    .dt-menu-toggle {
+        color: #ffffff;
+        cursor: pointer;
+        display: none;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 15px 15px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .dt-menu-toggle {
+        background: #000 none repeat scroll 0 0;
+    }
+
+    .dt-menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu_top {
+        line-height: 30px;
+    }
+
+    .menu li {
+        float: none;
+        background: #F0F0F0;
+        color: #000;
+        width: 100%;
+        text-align: left;
+        line-height: 40px;
+        border-top: 1px solid #fff;
+    }
+
+    .menu li a {
+        color: #000;
+    }
+
+    .menu li a:hover {
+        color: #000;
+    }
+
+    .menu {
+        height: auto;
+    }
+
+    .menu_top {
+        display: inline-block;
+        height: auto;
+    }
+
+    .button_about {
+        text-align: center;
+    }
+
+    .button_about a:first-child {
+        margin-right: 0px;
+    }
+
+    .button_about a {
+        width: 90%;
+        margin: 10px auto 10px auto;
+    }
+
+    .trainghiem {
+        min-height: 100px;
+    }
+
+    .trainghiem .row {
+        min-height: 100px;
+    }
+
+    .left_pro_index {
+        width: 100%;
+        text-align: center;
+        float: none;
+        padding: 0 15px;
+    }
+
+    .right_pro_index {
+        width: 100%;
+        float: none;
+        padding: 0 15px;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .right_pro_index .col-md-4 {
+        margin-top: 20px;
+    }
+
+    .product_index, .project_done {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+
+    #pro_done {
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+        width: 100%;
+        position: static;
+        top: 10px;
+    }
+
+    .right_pro_index .carousel {
+        height: auto
+    }
+
+    .project_done .container {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .project_done > .row > img {
+        display: none;
+    }
+
+    .title_pjdone a {
+        color: #000;
+    }
+
+    .art_index {
+        display: inline-block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .art_index > .row > img {
+        display: none;
+    }
+
+    .art_index .container {
+        position: static;
+        width: 100%;
+    }
+
+    .title_art_index_w {
+        position: static;
+    }
+
+    .sup_index {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .inner_cell_pr {
+        height: 270px;
+    }
+
+    .edit_box {
+        left: -23px !important;
+        top: -159px !important;
+    }
+
+    .cell_pack {
+        width: 50%;
+        float: left;
+        text-align: center;
+        margin-right: 0px;
+        background: url("../images/arrow.png") no-repeat scroll right center;
+    }
+
+    .cell_pack a {
+        display: inline-block;
+    }
+
+    .first_cell_pack {
+        margin-top: 0px;
+    }
+
+    .cell_detail_pack_info {
+        display: none;
+    }
+
+    .table_pack {
+        width: 100%;
+    }
+
+    .count_row {
+        width: 100%;
+    }
+
+    .popup_video {
+        width: 90%;
+        top: 150px;
+        min-height: 100px;
+    }
+
+    .popup_video iframe {
+        height: 200px;
+    }
+
+    .cell_gp {
+        margin-top: 15px;
+    }
+
+    .trainghiem > .container > .row > .col-xs-12 > iframe {
+        height: 200px;
+    }
+
+    .cell_support {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .cell_support a {
+        font-size: 15px;
+    }
+
+    .cell_cat {
+        min-width: 150px;
+        display: inline-block;
+        min-height: 150px;
+    }
+
+    .two_cell {
+        float: right;
+    }
+
+    .cell_cat:hover {
+        border: 1px solid #000;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    .row_cats .row {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .title_art_list {
+        margin-top: 10px;
+    }
+
+    .images_design img {
+        max-width: 100%;
+    }
+
+    .cell_design {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu_bottom {
+        height: auto;
+        line-height: 22px;
+    }
+}
+
+
+
+
+
