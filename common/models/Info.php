@@ -16,6 +16,7 @@ use yii\helpers\Url;
  * @property string $phone
  * @property string $address
  * @property string $facebook
+ * @property string $email
  */
 class Info extends \yii\db\ActiveRecord
 {
@@ -36,7 +37,7 @@ class Info extends \yii\db\ActiveRecord
     {
         return [
             [['content'], 'string'],
-            [['title', 'image_display', 'description', 'phone', 'address', 'facebook'], 'string', 'max' => 255],
+            [['title', 'image_display', 'description', 'phone', 'address', 'facebook', 'email'], 'string', 'max' => 255],
         ];
     }
 

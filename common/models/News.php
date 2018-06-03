@@ -23,6 +23,7 @@ use yii\helpers\Url;
  * @property integer $category_id
  * @property integer $posted_id
  * @property integer $is_hot
+ * @property integer $type
  *
  */
 class News extends \yii\db\ActiveRecord
@@ -36,6 +37,10 @@ class News extends \yii\db\ActiveRecord
     const NOT_SLIDE = 0;
 
     const IS_HOT = 1;
+
+    const TYPE_NEWS = 1; // Danh cho tin tức nếu có
+    const TYPE_PRODUCT = 2; // Dành cho sản phẩm
+    const TYPE_ABOUT = 3; // Dành cho giới thiêu
 
     public function getListStatus()
     {
@@ -78,7 +83,7 @@ class News extends \yii\db\ActiveRecord
     {
         return [
             [['content'], 'string'],
-            [['status', 'created_at', 'updated_at', 'is_slide', 'category_id', 'posted_id','is_hot'], 'integer'],
+            [['status', 'created_at', 'updated_at', 'is_slide', 'category_id', 'posted_id','is_hot','type'], 'integer'],
             [['title'], 'string', 'max' => 255],
             [['title'], 'required'],
             [['image_display'], 'required','on'=>'create'],

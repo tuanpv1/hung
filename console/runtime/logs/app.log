@@ -3062,3 +3062,191 @@ AND rc.table_name = 'user' AND kcu.table_name = 'user'
     ]
     'argc' => 4
 ]
+2018-06-03 16:52:18 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 16:52:18 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hung
+2018-06-03 16:52:18 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 16:52:18 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-06-03 16:52:19 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `info_table` ADD `email` varchar(255)
+    in D:\program\xampp\htdocs\hung\console\migrations\m180603_095212_add_email_column_to_info_table.php:15
+2018-06-03 16:52:20 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 16:52:20 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 16:52:20 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m180603_095212_add_email_column_to_info_table', 1528019540)
+2018-06-03 16:52:17 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'SynaProgDir' => 'Synaptics\\SynTP'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\npm;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hung\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1528019537.9838
+    'REQUEST_TIME' => 1528019537
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-06-03 16:52:18 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 16:52:18 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hung
+2018-06-03 16:52:18 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 16:52:18 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-06-03 16:52:19 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `info_table` ADD `email` varchar(255)
+    in D:\program\xampp\htdocs\hung\console\migrations\m180603_095212_add_email_column_to_info_table.php:15
+2018-06-03 16:52:20 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 16:52:20 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 16:52:20 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m180603_095212_add_email_column_to_info_table', 1528019540)
+2018-06-03 16:52:17 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'SynaProgDir' => 'Synaptics\\SynTP'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\npm;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hung\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1528019537.9838
+    'REQUEST_TIME' => 1528019537
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]

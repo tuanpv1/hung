@@ -74,10 +74,7 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        $listSlide = News::find()
-            ->select('id,image_slide,title,description')
-            ->andWhere(['status' => News::STATUS_ACTIVE])
-            ->andWhere(['is_slide' => News::IS_SLIDE])->all();
+
         $listSolution = Category::find()
             ->andWhere(['status' => Category::STATUS_ACTIVE])
             ->andWhere(['is_display' => Category::STATUS_DISPLAY])
@@ -85,7 +82,6 @@ class SiteController extends Controller
             ->all();
         $info = Info::findOne(['id' => Info::ID]);
         return $this->render('index', [
-            'listSlide' => $listSlide,
             'listSolution' => $listSolution,
             'info' => $info,
         ]);
@@ -195,21 +191,6 @@ class SiteController extends Controller
 
     public function actionIndexNews($category_id)
     {
-//        $listNews = News::find()
-//            ->andWhere(['status' => News::STATUS_ACTIVE])
-//            ->andWhere(['category_id' => $category_id]);
-//        $cate = Category::findOne($category_id);
-//        $countQuery = clone $listNews;
-//        $pages = new Pagination(['totalCount' => $countQuery->count()]);
-//        $pageSize = Yii::$app->params['page_size'];
-//        $pages->setPageSize($pageSize);
-//        $models = $listNews->offset($pages->offset)
-//            ->limit(10)->all();
-//        return $this->render('index-news', [
-//            'listNews' => $models,
-//            'cate' => $cate,
-//            'pages' => $pages,
-//        ]);
         $new = News::find()
             ->andWhere(['status' => News::STATUS_ACTIVE])
             ->andWhere(['category_id' => $category_id])

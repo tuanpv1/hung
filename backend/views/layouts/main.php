@@ -113,16 +113,24 @@ $arrlang = array();
 
 
             $rightItems = [
-                [
-                    'label' => Yii::t('app', 'QL Danh mục'),
-                    'url' => ['category/index'],
-                ],
+//                [
+//                    'label' => Yii::t('app', 'QL Danh mục'),
+//                    'url' => ['category/index'],
+//                ],
                 [
                     'label' => Yii::t('app', 'QL Bài viết'),
                     'url' => ['news/index'],
                 ],
                 [
+                    'label' => Yii::t('app', 'QL Sản phẩm'),
+                    'url' => ['product/index'],
+                ],
+                [
                     'label' => Yii::t('app', 'QL Giới thiệu'),
+                    'url' => ['about/view'],
+                ],
+                [
+                    'label' => Yii::t('app', 'QL Thông tin hệ thống'),
                     'url' => ['info/view', 'id' => Info::ID],
                 ],
                 [

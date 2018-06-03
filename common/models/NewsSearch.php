@@ -51,6 +51,10 @@ class NewsSearch extends News
 
         $this->load($params);
 
+        if($params['NewsSearch']['type']){
+            $query->andWhere(['type' => $params['NewsSearch']['type']]);
+        }
+
         if (!$this->validate()) {
             // uncomment the following line if you do not want to return any records when validation fails
             // $query->where('0=1');
@@ -65,7 +69,7 @@ class NewsSearch extends News
             'updated_at' => $this->updated_at,
             'is_slide' => $this->is_slide,
             'category_id' => $this->category_id,
-            'posted_id' => $this->posted_id,
+            'posted_id' => $this->posted_id
         ]);
 
         $query->andFilterWhere(['like', 'image_display', $this->image_display])

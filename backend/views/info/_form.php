@@ -58,6 +58,8 @@ $imageDisplayPreview = !$model->isNewRecord && !empty($model->image_display);
 
     <?= $form->field($model, 'facebook')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
+
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>

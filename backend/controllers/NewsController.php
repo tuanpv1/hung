@@ -39,7 +39,9 @@ class NewsController extends Controller
     public function actionIndex()
     {
         $searchModel = new NewsSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $params = Yii::$app->request->queryParams;
+        $params['NewsSearch']['type'] = News::TYPE_NEWS;
+        $dataProvider = $searchModel->search($params);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
@@ -101,6 +103,7 @@ class NewsController extends Controller
                 }
             }
             $model->posted_id = Yii::$app->user->id;
+            $model->type = News::TYPE_NEWS;
             if($model->save()) {
                 Yii::$app->getSession()->setFlash('success', 'Created!');
                 return $this->redirect(['view', 'id' => $model->id]);

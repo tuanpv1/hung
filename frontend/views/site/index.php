@@ -1,3 +1,8 @@
+<?php
+
+use frontend\widgets\SlideWidget;
+?>
+<?= SlideWidget::widget() ?>
 <!-- ABOUT US -->
 <div class="container-fluid about box_fix">
     <div class="container">

@@ -2,15 +2,101 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abded4d3-7b65-4472-9e02-e359d313712c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/config/main-local.php" afterPath="$PROJECT_DIR$/common/config/main-local.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/controllers/AboutController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/about/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/about/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/about/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/about/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/about/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/product/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/product/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/product/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/product/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/product/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/product/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/widgets/SlideWidget.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/widgets/views/slide.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59df2347081e3.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59df24fd19fe4.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59df261eea87f.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59df3b86b05ff.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f304553bb6b.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f304584bff0.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f304db8f836.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f304e027449.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f305323da3a.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f30535c8275.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f305391a797.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f305412d276.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f307972a435.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f307a6bd581.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f307ad56bf9.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f3082a32dce.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f30834d543c.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f3083c42e5a.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f3083ec20aa.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f308470d686.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f3086be27c8.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f68d96754bc.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f68d9adfb3a.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f68db14f1b8.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f68db5ec323.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f68dbc2c2a9.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f68dcf3adf4.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f68e3318cab.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/59f68e743fb6a.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/5a011b64d0297.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/5a011b6f5c638.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/5a011b74a06cf.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/5a011b76e3c9f.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/5a011b86d2d96.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/5a011b8c70755.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/5a011b920121c.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/5a011b9f28638.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/5a011ba19d17c.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/5a011ba9699f6.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/5a011bb51c182.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/5a011c0e3dcad.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/5a011c0e49752.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/5a011c37e585e.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/runtime/debug/5a011c75b027e.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/views/home-solution/_form.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/views/home-solution/view.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/controllers/SmsMessageController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/runtime/debug/59fd28942c884.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/runtime/debug/59fd289abed19.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/runtime/debug/59fd289f369ad.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/runtime/debug/59fd28a2ae156.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/runtime/debug/59fd28af5a191.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/runtime/debug/59fd28b31d252.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/runtime/debug/59fd290513d5d.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/runtime/debug/59fd290823566.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/runtime/debug/5a00610136da0.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/runtime/debug/5a00610d081fa.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/runtime/debug/5a011d5cd63f2.data" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/controllers/NewsController.php" afterPath="$PROJECT_DIR$/backend/controllers/NewsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/runtime/debug/index.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/index.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/runtime/logs/app.log" afterPath="$PROJECT_DIR$/backend/runtime/logs/app.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/info/_form.php" afterPath="$PROJECT_DIR$/backend/views/info/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/layouts/main.php" afterPath="$PROJECT_DIR$/backend/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/news/_form.php" afterPath="$PROJECT_DIR$/backend/views/news/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/Info.php" afterPath="$PROJECT_DIR$/common/models/Info.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/News.php" afterPath="$PROJECT_DIR$/common/models/News.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models/NewsSearch.php" afterPath="$PROJECT_DIR$/common/models/NewsSearch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/runtime/logs/app.log" afterPath="$PROJECT_DIR$/console/runtime/logs/app.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/frontend/controllers/SiteController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/runtime/debug/index.data" afterPath="$PROJECT_DIR$/frontend/runtime/debug/index.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/runtime/logs/app.log" afterPath="$PROJECT_DIR$/frontend/runtime/logs/app.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/layouts/main.php" afterPath="$PROJECT_DIR$/frontend/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/about.php" afterPath="$PROJECT_DIR$/frontend/views/site/about.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/views/site/index.php" afterPath="$PROJECT_DIR$/frontend/views/site/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/widgets/views/foot.php" afterPath="$PROJECT_DIR$/frontend/widgets/views/foot.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/widgets/views/footer.php" afterPath="$PROJECT_DIR$/frontend/widgets/views/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/widgets/views/head.php" afterPath="$PROJECT_DIR$/frontend/widgets/views/head.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/widgets/views/header.php" afterPath="$PROJECT_DIR$/frontend/widgets/views/header.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/controllers/HomeSolutionController.php" afterPath="$PROJECT_DIR$/backend/controllers/ProductController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/views/home-solution/_search.php" afterPath="$PROJECT_DIR$/backend/views/about/_search.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/views/home-solution/create.php" afterPath="$PROJECT_DIR$/backend/views/about/create.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/views/home-solution/index.php" afterPath="$PROJECT_DIR$/backend/views/product/index.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/views/home-solution/update.php" afterPath="$PROJECT_DIR$/backend/views/about/update.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,86 +107,21 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/widgets/views/head.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/views/layouts/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/widgets/views/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="150" column="0" lean-forward="true" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
-              <folding>
-                <element signature="n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/widgets/views/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="87" column="6" lean-forward="false" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
-              <folding>
-                <element signature="e#6#89#0#PHP" expanded="true" />
-                <element signature="n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="foot.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/widgets/views/foot.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="50" column="9" lean-forward="false" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/views/site/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="710" column="6" lean-forward="false" selection-start-line="710" selection-start-column="6" selection-end-line="710" selection-end-column="6" />
-              <folding>
-                <element signature="n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#!!top" expanded="false" />
-                <element signature="n#div#6;n#!!top" expanded="false" />
-                <element signature="n#div#7;n#!!top" expanded="false" />
-                <element signature="n#div#8;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#9;n#!!top" expanded="false" />
-                <element signature="n#div#10;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>actionA</find>
+      <find>http://dicom.vn/upload/</find>
+      <find>images</find>
+      <find>/p&gt;</find>
+      <find>/icon</find>
+      <find>actionIn</find>
+      <find>cate</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&lt;?= Yii::$app-&gt;request-&gt;getBaseUrl() ?&gt;/images</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,16 +129,34 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/views/site/about.php" />
         <option value="$PROJECT_DIR$/frontend/views/site/contact.php" />
         <option value="$PROJECT_DIR$/frontend/views/site/product.php" />
         <option value="$PROJECT_DIR$/common/config/main-local.php" />
-        <option value="$PROJECT_DIR$/frontend/views/site/index.php" />
         <option value="$PROJECT_DIR$/frontend/widgets/views/head.php" />
         <option value="$PROJECT_DIR$/frontend/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/frontend/widgets/views/header.php" />
         <option value="$PROJECT_DIR$/frontend/widgets/views/foot.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/ProductController.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/NewsController.php" />
+        <option value="$PROJECT_DIR$/frontend/views/site/about.php" />
+        <option value="$PROJECT_DIR$/common/models/Info.php" />
         <option value="$PROJECT_DIR$/frontend/widgets/views/footer.php" />
+        <option value="$PROJECT_DIR$/frontend/widgets/views/slides.php" />
+        <option value="$PROJECT_DIR$/frontend/views/site/index.php" />
+        <option value="$PROJECT_DIR$/frontend/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/frontend/widgets/views/slide.php" />
+        <option value="$PROJECT_DIR$/frontend/widgets/views/header.php" />
+        <option value="$PROJECT_DIR$/backend/views/info/_form.php" />
+        <option value="$PROJECT_DIR$/frontend/widgets/SlideWidget.php" />
+        <option value="$PROJECT_DIR$/common/models/News.php" />
+        <option value="$PROJECT_DIR$/backend/views/product/_form.php" />
+        <option value="$PROJECT_DIR$/backend/views/news/_form.php" />
+        <option value="$PROJECT_DIR$/backend/views/about/_form.php" />
+        <option value="$PROJECT_DIR$/backend/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/AboutController.php" />
+        <option value="$PROJECT_DIR$/backend/views/about/update.php" />
+        <option value="$PROJECT_DIR$/backend/views/about/create.php" />
+        <option value="$PROJECT_DIR$/backend/views/about/view.php" />
+        <option value="$PROJECT_DIR$/common/models/NewsSearch.php" />
       </list>
     </option>
   </component>
@@ -172,11 +211,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="widgets" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -190,73 +225,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="widgets" />
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hung" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hung" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hung" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hung" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hung" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hung" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -271,8 +244,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\program\xampp\htdocs\hung\backend\controllers" />
+      <recent name="D:\program\xampp\htdocs\hung\backend\views" />
+      <recent name="D:\program\xampp\htdocs\hung\backend\views\product" />
+      <recent name="D:\program\xampp\htdocs\hung\frontend\widgets" />
       <recent name="D:\program\xampp\htdocs\hung\frontend\web" />
-      <recent name="D:\program\xampp\htdocs\hung" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -372,25 +348,24 @@
       <option name="presentableId" value="Default" />
       <updated>1527818778408</updated>
       <workItem from="1527818780702" duration="3994000" />
-      <workItem from="1527983855003" duration="10427000" />
+      <workItem from="1527983855003" duration="15344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14421000" />
+    <option name="totallyTimeSpent" value="19338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -401,6 +376,25 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -447,14 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/site/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="225" column="18" lean-forward="true" selection-start-line="225" selection-start-column="18" selection-end-line="225" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -510,10 +496,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/site/index.php">
+    <entry file="file://$PROJECT_DIR$/frontend/widgets/views/foot.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="526">
-          <caret line="710" column="6" lean-forward="false" selection-start-line="710" selection-start-column="6" selection-end-line="710" selection-end-column="6" />
+          <caret line="50" column="9" lean-forward="false" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/NewsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1360">
+          <caret line="105" column="42" lean-forward="false" selection-start-line="105" selection-start-column="42" selection-end-line="105" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/product/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/widgets/Head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/site/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/Info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="39" column="93" lean-forward="false" selection-start-line="39" selection-start-column="93" selection-end-line="39" selection-end-column="93" />
+          <folding>
+            <element signature="e#33#41#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/web/images/DICOM_23(1).png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/widgets/views/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="45" column="14" lean-forward="false" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#p#2;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="e#1778#1784#0#HTML" expanded="true" />
+            <element signature="e#1785#1791#0#HTML" expanded="true" />
+            <element signature="e#1791#1797#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#p#2;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/widgets/views/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding>
             <element signature="n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#!!top" expanded="false" />
@@ -529,50 +607,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/widgets/views/head.php">
+    <entry file="file://$PROJECT_DIR$/frontend/widgets/views/slide.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/widgets/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="150" column="0" lean-forward="true" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/widgets/views/foot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="50" column="9" lean-forward="false" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        <state relative-caret-position="458">
+          <caret line="101" column="6" lean-forward="false" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/widgets/views/footer.php">
+    <entry file="file://$PROJECT_DIR$/backend/views/info/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="87" column="6" lean-forward="false" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
+        <state relative-caret-position="374">
+          <caret line="59" column="4" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
           <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-            <element signature="n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#!!top" expanded="false" />
+            <element signature="e#7#28#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/widgets/SlideWidget.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1173">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/News.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="40" column="51" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="74" column="33" lean-forward="true" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/news/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-970">
+          <caret line="44" column="74" lean-forward="false" selection-start-line="44" selection-start-column="74" selection-end-line="44" selection-end-column="74" />
+          <folding>
+            <marker date="1528021643836" expanded="true" signature="467:625" ph="{...}" />
+            <marker date="1528021643836" expanded="true" signature="508:561" ph="{...}" />
+            <marker date="1528021643836" expanded="true" signature="566:619" ph="{...}" />
+            <marker date="1528021643836" expanded="true" signature="688:735" ph="{...}" />
+            <marker date="1528021643836" expanded="true" signature="740:787" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/product/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="85" column="6" lean-forward="false" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
+          <folding>
+            <marker date="1528021611087" expanded="true" signature="467:625" ph="{...}" />
+            <marker date="1528021611087" expanded="true" signature="508:561" ph="{...}" />
+            <marker date="1528021611087" expanded="true" signature="566:619" ph="{...}" />
+            <marker date="1528021611087" expanded="true" signature="688:735" ph="{...}" />
+            <marker date="1528021611087" expanded="true" signature="740:787" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/about/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="76" lean-forward="false" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/about/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-953">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <marker date="1528021712889" expanded="true" signature="467:625" ph="{...}" />
+            <marker date="1528021712889" expanded="true" signature="508:561" ph="{...}" />
+            <marker date="1528021712889" expanded="true" signature="566:619" ph="{...}" />
+            <marker date="1528021712889" expanded="true" signature="688:735" ph="{...}" />
+            <marker date="1528021712889" expanded="true" signature="740:787" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/about/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/NewsSearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="42" column="38" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/about/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="110" lean-forward="false" selection-start-line="29" selection-start-column="110" selection-end-line="29" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/AboutController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="142" column="18" lean-forward="true" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="129" column="42" lean-forward="false" selection-start-line="129" selection-start-column="42" selection-end-line="129" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>

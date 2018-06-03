@@ -43,7 +43,6 @@ $this->registerJs($js, \yii\web\View::POS_READY);
     ); ?>
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
-    <?= $form->field($model, 'is_hot')->checkbox() ?>
 
     <?= $form->field($model, 'image_display')->widget(\kartik\file\FileInput::classname(), [
         'pluginOptions' => [
@@ -83,19 +82,6 @@ $this->registerJs($js, \yii\web\View::POS_READY);
             'accept' => 'image/*',
         ],
     ])->hint(Yii::t('app', 'Vui lòng tải hình ảnh có kích thước 1920*700 px để hiển thị tốt nhất '));
-    ?>
-
-    <?php
-    $dataList = \common\models\Category::getTreeCategories();
-    $disableId = false;
-    if (!$model->isNewRecord) {
-        $disableId = $model->id;
-    }
-    echo $form->field($model, 'category_id')->dropDownList($dataList,
-        [
-            'prompt' => '-Chọn danh mục-',
-            'options' => \common\models\Category::getAllChildCats($model->id) + [$model->id => ['disabled' => true]]
-        ]);
     ?>
 
     <?= $form->field($model, 'status')->dropDownList($model->getListStatus()) ?>
