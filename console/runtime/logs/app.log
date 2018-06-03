@@ -1,0 +1,3064 @@
+2017-10-06 13:45:43 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:40
+2017-10-06 13:45:43 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hauvv
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:40
+2017-10-06 13:45:43 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The table does not exist: {{%user}} in D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\ActiveRecord.php:299
+Stack trace:
+#0 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#1 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(427): yii\db\ActiveRecord->attributes()
+#2 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(269): yii\db\BaseActiveRecord->hasAttribute('username')
+#3 D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php(91): yii\db\BaseActiveRecord->__set('username', 'admin')
+#4 D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php(40): console\controllers\UserController->actionCreateUser('admin', 'admin@gmail.com', 'admin123')
+#5 [internal function]: console\controllers\UserController->actionCreateAdminUser('admin@gmail.com', 'admin123')
+#6 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('create-admin-us...', Array)
+#9 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('create-admin-us...', Array)
+#10 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('user/create-adm...', Array)
+#11 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('user/create-adm...', Array)
+#12 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 D:\program\xampp\htdocs\hauvv\yii(31): yii\base\Application->run()
+#14 {main}
+2017-10-06 13:45:43 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1507272343.3133
+    'REQUEST_TIME' => 1507272343
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'user/create-admin-user'
+        2 => 'admin@gmail.com'
+        3 => 'admin123'
+    ]
+    'argc' => 4
+]
+2017-10-06 13:45:43 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:40
+2017-10-06 13:45:43 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hauvv
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:40
+2017-10-06 13:45:43 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The table does not exist: {{%user}} in D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\ActiveRecord.php:299
+Stack trace:
+#0 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#1 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(427): yii\db\ActiveRecord->attributes()
+#2 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\BaseActiveRecord.php(269): yii\db\BaseActiveRecord->hasAttribute('username')
+#3 D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php(91): yii\db\BaseActiveRecord->__set('username', 'admin')
+#4 D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php(40): console\controllers\UserController->actionCreateUser('admin', 'admin@gmail.com', 'admin123')
+#5 [internal function]: console\controllers\UserController->actionCreateAdminUser('admin@gmail.com', 'admin123')
+#6 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('create-admin-us...', Array)
+#9 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('create-admin-us...', Array)
+#10 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('user/create-adm...', Array)
+#11 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('user/create-adm...', Array)
+#12 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 D:\program\xampp\htdocs\hauvv\yii(31): yii\base\Application->run()
+#14 {main}
+2017-10-06 13:45:43 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1507272343.3133
+    'REQUEST_TIME' => 1507272343
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'user/create-admin-user'
+        2 => 'admin@gmail.com'
+        3 => 'admin123'
+    ]
+    'argc' => 4
+]
+2017-10-06 13:45:49 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-06 13:45:49 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hauvv
+2017-10-06 13:45:50 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+)
+2017-10-06 13:45:51 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m000000_000000_base', 1507272351)
+2017-10-06 13:45:51 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET NAMES utf8 */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40103 SET TIME_ZONE='+00:00' */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] DROP TABLE IF EXISTS `user`;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @saved_cs_client     = @@character_set_client */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET character_set_client = utf8 */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL,
+  `auth_key` varchar(32) NOT NULL,
+  `password_hash` varchar(255) NOT NULL,
+  `password_reset_token` varchar(255) DEFAULT NULL,
+  `email` varchar(255) NOT NULL,
+  `role` smallint(6) NOT NULL DEFAULT '10',
+  `status` smallint(6) NOT NULL DEFAULT '10',
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  `type` smallint(6) NOT NULL DEFAULT '1' COMMENT '1 - Admin\n2 - SP\n3 - dealer',
+  `parent_id` int(11) DEFAULT NULL COMMENT 'ID cua accout me',
+  `fullname` varchar(255) DEFAULT NULL,
+  `user_ref_id` int(11) DEFAULT NULL,
+  `access_login_token` varchar(255) DEFAULT NULL,
+  `phone_number` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COMMENT='quan ly cac site (tvod viet nam, tvod nga, tvod sec...)';
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET character_set_client = @saved_cs_client */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] LOCK TABLES `user` WRITE;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40000 ALTER TABLE `user` DISABLE KEYS */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40000 ALTER TABLE `user` ENABLE KEYS */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] UNLOCK TABLES;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m150520_040002_init_db_schema', 1507272355)
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `news` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`image_display` text,
+	`image_slide` text,
+	`title` varchar(255),
+	`status` int(11),
+	`created_at` int(11),
+	`updated_at` int(11),
+	`description` varchar(500),
+	`content` text,
+	`is_slide` int(2),
+	`category_id` int(11),
+	`posted_id` int(11)
+)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171005_154114_create_new_table.php:27
+2017-10-06 13:45:56 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `category` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`display_name` varchar(255),
+	`status` int(11),
+	`created_at` int(11),
+	`updated_at` int(11),
+	`description` varchar(500),
+	`parent_id` int(11)
+)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171005_154114_create_new_table.php:37
+2017-10-06 13:45:56 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `home_solution` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`image_display` text,
+	`description` varchar(500),
+	`content` text,
+	`status` int(11),
+	`created_at` int(11),
+	`updated_at` int(11)
+)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171005_154114_create_new_table.php:46
+2017-10-06 13:45:56 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-06 13:45:56 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-06 13:45:56 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171005_154114_create_new_table', 1507272356)
+2017-10-06 13:45:56 [-][-][-][info][yii\db\Command::execute]         CREATE TABLE `auth_rule` (
+  `name` varchar(64) NOT NULL,
+  `data` text,
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `auth_item` (
+  `name` varchar(64) NOT NULL,
+  `type` int(11) NOT NULL,
+  `description` text,
+  `rule_name` varchar(64) DEFAULT NULL,
+  `data` text,
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  `acc_type` int(11) DEFAULT NULL,
+  PRIMARY KEY (`name`),
+  KEY `rule_name` (`rule_name`),
+  KEY `idx-auth_item-type` (`type`),
+  CONSTRAINT `auth_item_ibfk_1` FOREIGN KEY (`rule_name`) REFERENCES `auth_rule` (`name`) ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+      CREATE TABLE `auth_assignment` (
+  `item_name` varchar(64) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  PRIMARY KEY (`item_name`,`user_id`),
+  KEY `fk_auth_assignment_user1_idx` (`user_id`),
+  CONSTRAINT `auth_assignment_ibfk_1` FOREIGN KEY (`item_name`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_auth_assignment_user1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `auth_item_child` (
+  `parent` varchar(64) NOT NULL,
+  `child` varchar(64) NOT NULL,
+  PRIMARY KEY (`parent`,`child`),
+  KEY `child` (`child`),
+  CONSTRAINT `auth_item_child_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `auth_item_child_ibfk_2` FOREIGN KEY (`child`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171005_155637_add_new_table.php:53
+2017-10-06 13:45:58 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-06 13:45:58 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-06 13:45:58 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171005_155637_add_new_table', 1507272358)
+2017-10-06 13:45:49 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1507272349.9067
+    'REQUEST_TIME' => 1507272349
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-10-06 13:45:49 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-06 13:45:49 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hauvv
+2017-10-06 13:45:50 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+)
+2017-10-06 13:45:51 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m000000_000000_base', 1507272351)
+2017-10-06 13:45:51 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET NAMES utf8 */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40103 SET TIME_ZONE='+00:00' */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] DROP TABLE IF EXISTS `user`;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @saved_cs_client     = @@character_set_client */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET character_set_client = utf8 */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL,
+  `auth_key` varchar(32) NOT NULL,
+  `password_hash` varchar(255) NOT NULL,
+  `password_reset_token` varchar(255) DEFAULT NULL,
+  `email` varchar(255) NOT NULL,
+  `role` smallint(6) NOT NULL DEFAULT '10',
+  `status` smallint(6) NOT NULL DEFAULT '10',
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  `type` smallint(6) NOT NULL DEFAULT '1' COMMENT '1 - Admin\n2 - SP\n3 - dealer',
+  `parent_id` int(11) DEFAULT NULL COMMENT 'ID cua accout me',
+  `fullname` varchar(255) DEFAULT NULL,
+  `user_ref_id` int(11) DEFAULT NULL,
+  `access_login_token` varchar(255) DEFAULT NULL,
+  `phone_number` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COMMENT='quan ly cac site (tvod viet nam, tvod nga, tvod sec...)';
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40101 SET character_set_client = @saved_cs_client */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] LOCK TABLES `user` WRITE;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40000 ALTER TABLE `user` DISABLE KEYS */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] /*!40000 ALTER TABLE `user` ENABLE KEYS */;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] UNLOCK TABLES;
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m150520_040002_init_db_schema.php:42
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m150520_040002_init_db_schema', 1507272355)
+2017-10-06 13:45:55 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `news` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`image_display` text,
+	`image_slide` text,
+	`title` varchar(255),
+	`status` int(11),
+	`created_at` int(11),
+	`updated_at` int(11),
+	`description` varchar(500),
+	`content` text,
+	`is_slide` int(2),
+	`category_id` int(11),
+	`posted_id` int(11)
+)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171005_154114_create_new_table.php:27
+2017-10-06 13:45:56 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `category` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`display_name` varchar(255),
+	`status` int(11),
+	`created_at` int(11),
+	`updated_at` int(11),
+	`description` varchar(500),
+	`parent_id` int(11)
+)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171005_154114_create_new_table.php:37
+2017-10-06 13:45:56 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `home_solution` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`image_display` text,
+	`description` varchar(500),
+	`content` text,
+	`status` int(11),
+	`created_at` int(11),
+	`updated_at` int(11)
+)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171005_154114_create_new_table.php:46
+2017-10-06 13:45:56 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-06 13:45:56 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-06 13:45:56 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171005_154114_create_new_table', 1507272356)
+2017-10-06 13:45:56 [-][-][-][info][yii\db\Command::execute]         CREATE TABLE `auth_rule` (
+  `name` varchar(64) NOT NULL,
+  `data` text,
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `auth_item` (
+  `name` varchar(64) NOT NULL,
+  `type` int(11) NOT NULL,
+  `description` text,
+  `rule_name` varchar(64) DEFAULT NULL,
+  `data` text,
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  `acc_type` int(11) DEFAULT NULL,
+  PRIMARY KEY (`name`),
+  KEY `rule_name` (`rule_name`),
+  KEY `idx-auth_item-type` (`type`),
+  CONSTRAINT `auth_item_ibfk_1` FOREIGN KEY (`rule_name`) REFERENCES `auth_rule` (`name`) ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+      CREATE TABLE `auth_assignment` (
+  `item_name` varchar(64) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  PRIMARY KEY (`item_name`,`user_id`),
+  KEY `fk_auth_assignment_user1_idx` (`user_id`),
+  CONSTRAINT `auth_assignment_ibfk_1` FOREIGN KEY (`item_name`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_auth_assignment_user1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `auth_item_child` (
+  `parent` varchar(64) NOT NULL,
+  `child` varchar(64) NOT NULL,
+  PRIMARY KEY (`parent`,`child`),
+  KEY `child` (`child`),
+  CONSTRAINT `auth_item_child_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `auth_item_child_ibfk_2` FOREIGN KEY (`child`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171005_155637_add_new_table.php:53
+2017-10-06 13:45:58 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-06 13:45:58 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-06 13:45:58 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171005_155637_add_new_table', 1507272358)
+2017-10-06 13:45:49 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1507272349.9067
+    'REQUEST_TIME' => 1507272349
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-10-06 13:46:01 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:40
+2017-10-06 13:46:01 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hauvv
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:40
+2017-10-06 13:46:01 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:40
+2017-10-06 13:46:02 [-][-][-][info][yii\db\Command::execute] INSERT INTO `user` (`username`, `status`, `email`, `password_hash`, `auth_key`, `created_at`, `updated_at`) VALUES ('admin', 10, 'admin@gmail.com', '$2y$13$Pz/b1YEziaBZ2Yr9xVBpx.yzk/4KCAY4JipH0Jdu/dfG22EFNkNJK', 'VsvhXWtC5WM6-Jz-YfDFcnBI0y65Qi32', 1507272362, 1507272362)
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:99
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:40
+2017-10-06 13:46:01 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1507272361.1328
+    'REQUEST_TIME' => 1507272361
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'user/create-admin-user'
+        2 => 'admin@gmail.com'
+        3 => 'admin123'
+    ]
+    'argc' => 4
+]
+2017-10-06 13:46:01 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:40
+2017-10-06 13:46:01 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hauvv
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:40
+2017-10-06 13:46:01 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:40
+2017-10-06 13:46:02 [-][-][-][info][yii\db\Command::execute] INSERT INTO `user` (`username`, `status`, `email`, `password_hash`, `auth_key`, `created_at`, `updated_at`) VALUES ('admin', 10, 'admin@gmail.com', '$2y$13$Pz/b1YEziaBZ2Yr9xVBpx.yzk/4KCAY4JipH0Jdu/dfG22EFNkNJK', 'VsvhXWtC5WM6-Jz-YfDFcnBI0y65Qi32', 1507272362, 1507272362)
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:99
+    in D:\program\xampp\htdocs\hauvv\console\controllers\UserController.php:40
+2017-10-06 13:46:01 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1507272361.1328
+    'REQUEST_TIME' => 1507272361
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'user/create-admin-user'
+        2 => 'admin@gmail.com'
+        3 => 'admin123'
+    ]
+    'argc' => 4
+]
+2017-10-09 11:24:55 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-09 11:24:55 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hauvv
+2017-10-09 11:24:55 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-09 11:24:55 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2017-10-09 11:24:56 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `info_table` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(255),
+	`image_display` varchar(255),
+	`description` varchar(255),
+	`content` text,
+	`phone` varchar(255),
+	`address` varchar(255),
+	`facebook` varchar(255)
+)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171009_042447_create_info_table.php:23
+2017-10-09 11:24:57 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-09 11:24:57 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-09 11:24:57 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171009_042447_create_info_table', 1507523097)
+2017-10-09 11:24:54 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1507523094.9747
+    'REQUEST_TIME' => 1507523094
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-10-09 11:24:55 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-09 11:24:55 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hauvv
+2017-10-09 11:24:55 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-09 11:24:55 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2017-10-09 11:24:56 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `info_table` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(255),
+	`image_display` varchar(255),
+	`description` varchar(255),
+	`content` text,
+	`phone` varchar(255),
+	`address` varchar(255),
+	`facebook` varchar(255)
+)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171009_042447_create_info_table.php:23
+2017-10-09 11:24:57 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-09 11:24:57 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-09 11:24:57 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171009_042447_create_info_table', 1507523097)
+2017-10-09 11:24:54 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1507523094.9747
+    'REQUEST_TIME' => 1507523094
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-10-09 16:03:22 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-09 16:03:22 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hauvv
+2017-10-09 16:03:22 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-09 16:03:22 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2017-10-09 16:03:23 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `home_solution` ADD `title` varchar(255)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171009_090252_add_title_column_to_home_solution_table.php:15
+2017-10-09 16:03:24 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-09 16:03:24 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-09 16:03:24 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171009_090252_add_title_column_to_home_solution_table', 1507539804)
+2017-10-09 16:03:22 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1507539802.3307
+    'REQUEST_TIME' => 1507539802
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-10-09 16:03:22 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-09 16:03:22 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hauvv
+2017-10-09 16:03:22 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-09 16:03:22 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2017-10-09 16:03:23 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `home_solution` ADD `title` varchar(255)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171009_090252_add_title_column_to_home_solution_table.php:15
+2017-10-09 16:03:24 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-09 16:03:24 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-09 16:03:24 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171009_090252_add_title_column_to_home_solution_table', 1507539804)
+2017-10-09 16:03:22 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1507539802.3307
+    'REQUEST_TIME' => 1507539802
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-10-12 13:55:07 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-12 13:55:07 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hauvv
+2017-10-12 13:55:07 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-12 13:55:07 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2017-10-12 13:55:09 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `news` ADD `is_hot` int(11)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171011_161728_add_new_column_news.php:9
+2017-10-12 13:55:10 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `news` ADD `icon` varchar(255)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171011_161728_add_new_column_news.php:10
+2017-10-12 13:55:10 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-12 13:55:10 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-12 13:55:10 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171011_161728_add_new_column_news', 1507791310)
+2017-10-12 13:55:07 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1507791306.9911
+    'REQUEST_TIME' => 1507791306
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-10-12 13:55:07 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-12 13:55:07 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hauvv
+2017-10-12 13:55:07 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-12 13:55:07 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2017-10-12 13:55:09 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `news` ADD `is_hot` int(11)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171011_161728_add_new_column_news.php:9
+2017-10-12 13:55:10 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `news` ADD `icon` varchar(255)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171011_161728_add_new_column_news.php:10
+2017-10-12 13:55:10 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-10-12 13:55:10 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-10-12 13:55:10 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171011_161728_add_new_column_news', 1507791310)
+2017-10-12 13:55:07 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1507791306.9911
+    'REQUEST_TIME' => 1507791306
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-11-07 09:28:53 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-11-07 09:28:53 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=45.32.112.173;dbname=hauvv
+2017-11-07 09:28:54 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-11-07 09:28:54 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2017-11-07 09:28:55 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `news_table` ADD `type` int(11)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171107_022848_add_type_column_to_news_table.php:15
+2017-11-07 09:28:55 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'hauvv.news_table' doesn't exist in D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\Migration.php(318): yii\db\Command->execute()
+#2 D:\program\xampp\htdocs\hauvv\console\migrations\m171107_022848_add_type_column_to_news_table.php(15): yii\db\Migration->addColumn('news_table', 'type', Object(yii\db\mysql\ColumnSchemaBuilder))
+#3 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m171107_022848_add_type_column_to_news_table->up()
+#4 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m171107_022848_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#9 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#10 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#11 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#12 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 D:\program\xampp\htdocs\hauvv\yii(31): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'hauvv.news_table' doesn't exist
+The SQL being executed was: ALTER TABLE `news_table` ADD `type` int(11) in D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE `ne...')
+#1 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\Migration.php(318): yii\db\Command->execute()
+#2 D:\program\xampp\htdocs\hauvv\console\migrations\m171107_022848_add_type_column_to_news_table.php(15): yii\db\Migration->addColumn('news_table', 'type', Object(yii\db\mysql\ColumnSchemaBuilder))
+#3 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m171107_022848_add_type_column_to_news_table->up()
+#4 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m171107_022848_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#9 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#10 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#11 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#12 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 D:\program\xampp\htdocs\hauvv\yii(31): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'hauvv.news_table' doesn't exist
+)
+
+2017-11-07 09:28:53 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1510021733.6343
+    'REQUEST_TIME' => 1510021733
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-11-07 09:28:53 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-11-07 09:28:53 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=45.32.112.173;dbname=hauvv
+2017-11-07 09:28:54 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-11-07 09:28:54 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2017-11-07 09:28:55 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `news_table` ADD `type` int(11)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171107_022848_add_type_column_to_news_table.php:15
+2017-11-07 09:28:55 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'hauvv.news_table' doesn't exist in D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\Migration.php(318): yii\db\Command->execute()
+#2 D:\program\xampp\htdocs\hauvv\console\migrations\m171107_022848_add_type_column_to_news_table.php(15): yii\db\Migration->addColumn('news_table', 'type', Object(yii\db\mysql\ColumnSchemaBuilder))
+#3 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m171107_022848_add_type_column_to_news_table->up()
+#4 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m171107_022848_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#9 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#10 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#11 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#12 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 D:\program\xampp\htdocs\hauvv\yii(31): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'hauvv.news_table' doesn't exist
+The SQL being executed was: ALTER TABLE `news_table` ADD `type` int(11) in D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE `ne...')
+#1 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\db\Migration.php(318): yii\db\Command->execute()
+#2 D:\program\xampp\htdocs\hauvv\console\migrations\m171107_022848_add_type_column_to_news_table.php(15): yii\db\Migration->addColumn('news_table', 'type', Object(yii\db\mysql\ColumnSchemaBuilder))
+#3 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m171107_022848_add_type_column_to_news_table->up()
+#4 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m171107_022848_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#9 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#10 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#11 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#12 D:\program\xampp\htdocs\hauvv\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 D:\program\xampp\htdocs\hauvv\yii(31): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'hauvv.news_table' doesn't exist
+)
+
+2017-11-07 09:28:53 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1510021733.6343
+    'REQUEST_TIME' => 1510021733
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-11-07 09:29:17 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-11-07 09:29:17 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=45.32.112.173;dbname=hauvv
+2017-11-07 09:29:17 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-11-07 09:29:18 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2017-11-07 09:29:18 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `news` ADD `type` int(11)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171107_022848_add_type_column_to_news_table.php:15
+2017-11-07 09:29:18 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-11-07 09:29:19 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-11-07 09:29:19 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171107_022848_add_type_column_to_news_table', 1510021758)
+2017-11-07 09:29:17 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1510021757.3474
+    'REQUEST_TIME' => 1510021757
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-11-07 09:29:17 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-11-07 09:29:17 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=45.32.112.173;dbname=hauvv
+2017-11-07 09:29:17 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-11-07 09:29:18 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2017-11-07 09:29:18 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `news` ADD `type` int(11)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171107_022848_add_type_column_to_news_table.php:15
+2017-11-07 09:29:18 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-11-07 09:29:19 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-11-07 09:29:19 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171107_022848_add_type_column_to_news_table', 1510021758)
+2017-11-07 09:29:17 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1510021757.3474
+    'REQUEST_TIME' => 1510021757
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-11-07 09:32:49 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-11-07 09:32:49 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=45.32.112.173;dbname=hauvv
+2017-11-07 09:32:50 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-11-07 09:32:50 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2017-11-07 09:32:51 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `contact` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(255),
+	`content` text
+)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171107_023227_create_contact_table.php:18
+2017-11-07 09:32:51 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-11-07 09:32:51 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-11-07 09:32:52 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171107_023227_create_contact_table', 1510021971)
+2017-11-07 09:32:49 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1510021969.9698
+    'REQUEST_TIME' => 1510021969
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-11-07 09:32:49 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-11-07 09:32:49 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=45.32.112.173;dbname=hauvv
+2017-11-07 09:32:50 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-11-07 09:32:50 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2017-11-07 09:32:51 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `contact` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(255),
+	`content` text
+)
+    in D:\program\xampp\htdocs\hauvv\console\migrations\m171107_023227_create_contact_table.php:18
+2017-11-07 09:32:51 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2017-11-07 09:32:51 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2017-11-07 09:32:52 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171107_023227_create_contact_table', 1510021971)
+2017-11-07 09:32:49 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hauvv\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1510021969.9698
+    'REQUEST_TIME' => 1510021969
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hauvv\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-06-03 07:32:23 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:23 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hung
+2018-06-03 07:32:24 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+)
+2018-06-03 07:32:24 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m000000_000000_base', 1527985944)
+2018-06-03 07:32:24 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40101 SET NAMES utf8 */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40103 SET TIME_ZONE='+00:00' */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] DROP TABLE IF EXISTS `user`;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @saved_cs_client     = @@character_set_client */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40101 SET character_set_client = utf8 */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL,
+  `auth_key` varchar(32) NOT NULL,
+  `password_hash` varchar(255) NOT NULL,
+  `password_reset_token` varchar(255) DEFAULT NULL,
+  `email` varchar(255) NOT NULL,
+  `role` smallint(6) NOT NULL DEFAULT '10',
+  `status` smallint(6) NOT NULL DEFAULT '10',
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  `type` smallint(6) NOT NULL DEFAULT '1' COMMENT '1 - Admin\n2 - SP\n3 - dealer',
+  `parent_id` int(11) DEFAULT NULL COMMENT 'ID cua accout me',
+  `fullname` varchar(255) DEFAULT NULL,
+  `user_ref_id` int(11) DEFAULT NULL,
+  `access_login_token` varchar(255) DEFAULT NULL,
+  `phone_number` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COMMENT='quan ly cac site (tvod viet nam, tvod nga, tvod sec...)';
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::execute] /*!40101 SET character_set_client = @saved_cs_client */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::execute] LOCK TABLES `user` WRITE;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::execute] /*!40000 ALTER TABLE `user` DISABLE KEYS */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::execute] /*!40000 ALTER TABLE `user` ENABLE KEYS */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::execute] UNLOCK TABLES;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m150520_040002_init_db_schema', 1527985947)
+2018-06-03 07:32:28 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `news` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`image_display` text,
+	`image_slide` text,
+	`title` varchar(255),
+	`status` int(11),
+	`created_at` int(11),
+	`updated_at` int(11),
+	`description` varchar(500),
+	`content` text,
+	`is_slide` int(2),
+	`category_id` int(11),
+	`posted_id` int(11)
+)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171005_154114_create_new_table.php:27
+2018-06-03 07:32:28 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `category` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`display_name` varchar(255),
+	`status` int(11),
+	`created_at` int(11),
+	`updated_at` int(11),
+	`description` varchar(500),
+	`parent_id` int(11)
+)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171005_154114_create_new_table.php:37
+2018-06-03 07:32:28 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `home_solution` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`image_display` text,
+	`description` varchar(500),
+	`content` text,
+	`status` int(11),
+	`created_at` int(11),
+	`updated_at` int(11)
+)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171005_154114_create_new_table.php:46
+2018-06-03 07:32:28 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:28 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:28 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171005_154114_create_new_table', 1527985948)
+2018-06-03 07:32:29 [-][-][-][info][yii\db\Command::execute]         CREATE TABLE `auth_rule` (
+  `name` varchar(64) NOT NULL,
+  `data` text,
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `auth_item` (
+  `name` varchar(64) NOT NULL,
+  `type` int(11) NOT NULL,
+  `description` text,
+  `rule_name` varchar(64) DEFAULT NULL,
+  `data` text,
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  `acc_type` int(11) DEFAULT NULL,
+  PRIMARY KEY (`name`),
+  KEY `rule_name` (`rule_name`),
+  KEY `idx-auth_item-type` (`type`),
+  CONSTRAINT `auth_item_ibfk_1` FOREIGN KEY (`rule_name`) REFERENCES `auth_rule` (`name`) ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+      CREATE TABLE `auth_assignment` (
+  `item_name` varchar(64) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  PRIMARY KEY (`item_name`,`user_id`),
+  KEY `fk_auth_assignment_user1_idx` (`user_id`),
+  CONSTRAINT `auth_assignment_ibfk_1` FOREIGN KEY (`item_name`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_auth_assignment_user1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `auth_item_child` (
+  `parent` varchar(64) NOT NULL,
+  `child` varchar(64) NOT NULL,
+  PRIMARY KEY (`parent`,`child`),
+  KEY `child` (`child`),
+  CONSTRAINT `auth_item_child_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `auth_item_child_ibfk_2` FOREIGN KEY (`child`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m171005_155637_add_new_table.php:53
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171005_155637_add_new_table', 1527985950)
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `info_table` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(255),
+	`image_display` varchar(255),
+	`description` varchar(255),
+	`content` text,
+	`phone` varchar(255),
+	`address` varchar(255),
+	`facebook` varchar(255)
+)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171009_042447_create_info_table.php:23
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171009_042447_create_info_table', 1527985950)
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `home_solution` ADD `title` varchar(255)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171009_090252_add_title_column_to_home_solution_table.php:15
+2018-06-03 07:32:31 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:31 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:31 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171009_090252_add_title_column_to_home_solution_table', 1527985951)
+2018-06-03 07:32:31 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `news` ADD `is_hot` int(11)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171011_161728_add_new_column_news.php:9
+2018-06-03 07:32:32 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `news` ADD `icon` varchar(255)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171011_161728_add_new_column_news.php:10
+2018-06-03 07:32:33 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:33 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:33 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171011_161728_add_new_column_news', 1527985953)
+2018-06-03 07:32:33 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `category` ADD `is_display` int(11)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171030_030843_create_new_column_category.php:9
+2018-06-03 07:32:34 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:34 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:34 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171030_030843_create_new_column_category', 1527985954)
+2018-06-03 07:32:34 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `category` ADD `image` varchar(255)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171030_033058_create_new_column_catgory.php:9
+2018-06-03 07:32:35 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:35 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:35 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171030_033058_create_new_column_catgory', 1527985955)
+2018-06-03 07:32:35 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `news` ADD `type` int(11)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171107_022848_add_type_column_to_news_table.php:15
+2018-06-03 07:32:35 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:36 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:36 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171107_022848_add_type_column_to_news_table', 1527985955)
+2018-06-03 07:32:36 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `contact` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(255),
+	`content` text
+)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171107_023227_create_contact_table.php:18
+2018-06-03 07:32:36 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:36 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:36 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171107_023227_create_contact_table', 1527985956)
+2018-06-03 07:32:21 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'SynaProgDir' => 'Synaptics\\SynTP'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\npm;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hung\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1527985940.6637
+    'REQUEST_TIME' => 1527985940
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-06-03 07:32:23 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:23 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hung
+2018-06-03 07:32:24 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+)
+2018-06-03 07:32:24 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m000000_000000_base', 1527985944)
+2018-06-03 07:32:24 [-][-][-][info][yii\db\Command::query] SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40101 SET NAMES utf8 */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40103 SET TIME_ZONE='+00:00' */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] DROP TABLE IF EXISTS `user`;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40101 SET @saved_cs_client     = @@character_set_client */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] /*!40101 SET character_set_client = utf8 */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:26 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL,
+  `auth_key` varchar(32) NOT NULL,
+  `password_hash` varchar(255) NOT NULL,
+  `password_reset_token` varchar(255) DEFAULT NULL,
+  `email` varchar(255) NOT NULL,
+  `role` smallint(6) NOT NULL DEFAULT '10',
+  `status` smallint(6) NOT NULL DEFAULT '10',
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  `type` smallint(6) NOT NULL DEFAULT '1' COMMENT '1 - Admin\n2 - SP\n3 - dealer',
+  `parent_id` int(11) DEFAULT NULL COMMENT 'ID cua accout me',
+  `fullname` varchar(255) DEFAULT NULL,
+  `user_ref_id` int(11) DEFAULT NULL,
+  `access_login_token` varchar(255) DEFAULT NULL,
+  `phone_number` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COMMENT='quan ly cac site (tvod viet nam, tvod nga, tvod sec...)';
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::execute] /*!40101 SET character_set_client = @saved_cs_client */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::execute] LOCK TABLES `user` WRITE;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::execute] /*!40000 ALTER TABLE `user` DISABLE KEYS */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::execute] /*!40000 ALTER TABLE `user` ENABLE KEYS */;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::execute] UNLOCK TABLES;
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m150520_040002_init_db_schema.php:42
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:27 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m150520_040002_init_db_schema', 1527985947)
+2018-06-03 07:32:28 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `news` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`image_display` text,
+	`image_slide` text,
+	`title` varchar(255),
+	`status` int(11),
+	`created_at` int(11),
+	`updated_at` int(11),
+	`description` varchar(500),
+	`content` text,
+	`is_slide` int(2),
+	`category_id` int(11),
+	`posted_id` int(11)
+)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171005_154114_create_new_table.php:27
+2018-06-03 07:32:28 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `category` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`display_name` varchar(255),
+	`status` int(11),
+	`created_at` int(11),
+	`updated_at` int(11),
+	`description` varchar(500),
+	`parent_id` int(11)
+)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171005_154114_create_new_table.php:37
+2018-06-03 07:32:28 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `home_solution` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`image_display` text,
+	`description` varchar(500),
+	`content` text,
+	`status` int(11),
+	`created_at` int(11),
+	`updated_at` int(11)
+)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171005_154114_create_new_table.php:46
+2018-06-03 07:32:28 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:28 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:28 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171005_154114_create_new_table', 1527985948)
+2018-06-03 07:32:29 [-][-][-][info][yii\db\Command::execute]         CREATE TABLE `auth_rule` (
+  `name` varchar(64) NOT NULL,
+  `data` text,
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `auth_item` (
+  `name` varchar(64) NOT NULL,
+  `type` int(11) NOT NULL,
+  `description` text,
+  `rule_name` varchar(64) DEFAULT NULL,
+  `data` text,
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  `acc_type` int(11) DEFAULT NULL,
+  PRIMARY KEY (`name`),
+  KEY `rule_name` (`rule_name`),
+  KEY `idx-auth_item-type` (`type`),
+  CONSTRAINT `auth_item_ibfk_1` FOREIGN KEY (`rule_name`) REFERENCES `auth_rule` (`name`) ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+      CREATE TABLE `auth_assignment` (
+  `item_name` varchar(64) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `created_at` int(11) DEFAULT NULL,
+  `updated_at` int(11) DEFAULT NULL,
+  PRIMARY KEY (`item_name`,`user_id`),
+  KEY `fk_auth_assignment_user1_idx` (`user_id`),
+  CONSTRAINT `auth_assignment_ibfk_1` FOREIGN KEY (`item_name`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_auth_assignment_user1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `auth_item_child` (
+  `parent` varchar(64) NOT NULL,
+  `child` varchar(64) NOT NULL,
+  PRIMARY KEY (`parent`,`child`),
+  KEY `child` (`child`),
+  CONSTRAINT `auth_item_child_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `auth_item_child_ibfk_2` FOREIGN KEY (`child`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+    in D:\program\xampp\htdocs\hung\console\migrations\m171005_155637_add_new_table.php:53
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171005_155637_add_new_table', 1527985950)
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `info_table` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(255),
+	`image_display` varchar(255),
+	`description` varchar(255),
+	`content` text,
+	`phone` varchar(255),
+	`address` varchar(255),
+	`facebook` varchar(255)
+)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171009_042447_create_info_table.php:23
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171009_042447_create_info_table', 1527985950)
+2018-06-03 07:32:30 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `home_solution` ADD `title` varchar(255)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171009_090252_add_title_column_to_home_solution_table.php:15
+2018-06-03 07:32:31 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:31 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:31 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171009_090252_add_title_column_to_home_solution_table', 1527985951)
+2018-06-03 07:32:31 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `news` ADD `is_hot` int(11)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171011_161728_add_new_column_news.php:9
+2018-06-03 07:32:32 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `news` ADD `icon` varchar(255)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171011_161728_add_new_column_news.php:10
+2018-06-03 07:32:33 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:33 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:33 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171011_161728_add_new_column_news', 1527985953)
+2018-06-03 07:32:33 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `category` ADD `is_display` int(11)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171030_030843_create_new_column_category.php:9
+2018-06-03 07:32:34 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:34 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:34 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171030_030843_create_new_column_category', 1527985954)
+2018-06-03 07:32:34 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `category` ADD `image` varchar(255)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171030_033058_create_new_column_catgory.php:9
+2018-06-03 07:32:35 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:35 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:35 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171030_033058_create_new_column_catgory', 1527985955)
+2018-06-03 07:32:35 [-][-][-][info][yii\db\Command::execute] ALTER TABLE `news` ADD `type` int(11)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171107_022848_add_type_column_to_news_table.php:15
+2018-06-03 07:32:35 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:36 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:36 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171107_022848_add_type_column_to_news_table', 1527985955)
+2018-06-03 07:32:36 [-][-][-][info][yii\db\Command::execute] CREATE TABLE `contact` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(255),
+	`content` text
+)
+    in D:\program\xampp\htdocs\hung\console\migrations\m171107_023227_create_contact_table.php:18
+2018-06-03 07:32:36 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `migration`
+2018-06-03 07:32:36 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'
+2018-06-03 07:32:36 [-][-][-][info][yii\db\Command::execute] INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m171107_023227_create_contact_table', 1527985956)
+2018-06-03 07:32:21 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'SynaProgDir' => 'Synaptics\\SynTP'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\npm;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hung\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1527985940.6637
+    'REQUEST_TIME' => 1527985940
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-06-03 07:33:15 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:40
+2018-06-03 07:33:15 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hung
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:40
+2018-06-03 07:33:15 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:40
+2018-06-03 07:33:17 [-][-][-][info][yii\db\Command::execute] INSERT INTO `user` (`username`, `status`, `email`, `password_hash`, `auth_key`, `created_at`, `updated_at`) VALUES ('admin', 10, 'admin@gmail.com', '$2y$13$esXBSA8wAuCeV6rQQw8.tOHx8WNs66VcsDm.eL8ZUz28ua6FP8Me2', 'j-_5kAvBuiu5cj_2pY2SLv4nGCREKK-A', 1527985997, 1527985997)
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:99
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:40
+2018-06-03 07:33:15 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'SynaProgDir' => 'Synaptics\\SynTP'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\npm;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hung\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1527985995.4716
+    'REQUEST_TIME' => 1527985995
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+        1 => 'user/create-admin-user'
+        2 => 'admin@gmail.com'
+        3 => 'admin123'
+    ]
+    'argc' => 4
+]
+2018-06-03 07:33:15 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:40
+2018-06-03 07:33:15 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=hung
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:40
+2018-06-03 07:33:15 [-][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:91
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:40
+2018-06-03 07:33:17 [-][-][-][info][yii\db\Command::execute] INSERT INTO `user` (`username`, `status`, `email`, `password_hash`, `auth_key`, `created_at`, `updated_at`) VALUES ('admin', 10, 'admin@gmail.com', '$2y$13$esXBSA8wAuCeV6rQQw8.tOHx8WNs66VcsDm.eL8ZUz28ua6FP8Me2', 'j-_5kAvBuiu5cj_2pY2SLv4nGCREKK-A', 1527985997, 1527985997)
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:99
+    in D:\program\xampp\htdocs\hung\console\controllers\UserController.php:40
+2018-06-03 07:33:15 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'TUANPV'
+    'LOCALAPPDATA' => 'C:\\Users\\TuanPV\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'TUANPV'
+    'LOGONSERVER' => '\\\\TUANPV'
+    'SynaProgDir' => 'Synaptics\\SynTP'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_131'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'D:\\OneDrive'
+    'APPDATA' => 'C:\\Users\\TuanPV\\AppData\\Roaming'
+    'USERNAME' => 'TuanPV'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\PuTTY\\;D:\\program\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_131\\bin;C:\\Program Files (x86)\\Rational\\common;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\TuanPV\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TuanPV\\AppData\\Roaming\\npm;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'TUANPV'
+    'PROCESSOR_REVISION' => '4e03'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\TuanPV'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\TuanPV'
+    'TMP' => 'C:\\Users\\TuanPV\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\program\\xampp\\htdocs\\hung\\'
+    'PHP_SELF' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'SCRIPT_NAME' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'SCRIPT_FILENAME' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'PATH_TRANSLATED' => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1527985995.4716
+    'REQUEST_TIME' => 1527985995
+    'argv' => [
+        0 => 'D:\\program\\xampp\\htdocs\\hung\\yii'
+        1 => 'user/create-admin-user'
+        2 => 'admin@gmail.com'
+        3 => 'admin123'
+    ]
+    'argc' => 4
+]
