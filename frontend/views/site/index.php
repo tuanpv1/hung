@@ -70,172 +70,33 @@ use yii\helpers\Url;
     </div>
 </div>
 <!--PRODUCT-->
-<!-- Ung Dung -->
-<div class="container-fluid ungdung-index box_fix">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-xs-12 ungdung-index-left">
-                <h2>
-                    <span style="color:#0789c7;"><span>Ứng dụng</span></span> D-Home</h2>
-                <p>
-                    Chỉ với một Ứng dụng D-Home, bạn c&oacute; thể điều khiển v&agrave; gi&aacute;m s&aacute;t hầu hết c&aacute;c
-                    thiết bị trong gia đ&igrave;nh từ đ&egrave;n, r&egrave;m, b&igrave;nh n&oacute;ng lạnh, ti vi, điều
-                    h&ograve;a... mọi l&uacute;c, mọi nơi.&nbsp;</p>
-                <ul>
-                    <li>
-                        Điều khiển thiết bị từ xa
-                    </li>
-                    <li>
-                        Theo d&otilde;i trực tiếp ng&ocirc;i nh&agrave; th&ocirc;ng qua h&igrave;nh ảnh v&agrave; video
-                    </li>
-                    <li>
-                        C&agrave;i đặt lịch bật/ tắt thiết bị&nbsp;
-                    </li>
-                </ul>
-                <a href="http://dicom.vn/ung-dung-d-home-ct28.html" class="view-detail">Xem Chi Tiết</a>
-            </div>
-            <div class="col-sm-6 col-xs-12 ungdung-index-right">
-                <img src="http://dicom.vn/upload/<?= Yii::$app->request->getBaseUrl() ?>/images/sanpham/D-Home%20app/UNG-DUNG-NHA-THONG-MINH-DICOM-min.jpg"
-                     class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Ung Dung -->
-
-<!-- nav-index-bottom -->
-<div class="container-fluid nav-index-bottom box_fix">
-    <ul>
-        <li>
-            <a href="http://dicom.vn/he-thong-chieu-sang-nha-thong-minh-dicom-ct45.html" target="_blank">Chiếu S&aacute;ng</a>
-        </li>
-        <li>
-            <a href="http://dicom.vn/dieu-khien-rem-tu-dong-voi-nha-thong-minh-dicom-ct41.html" target="_blank">R&egrave;m</a>
-        </li>
-        <li>
-            <a href="http://dicom.vn/he-thong-an-ninh-canh-bao-cua-dicom-smarthome-ct42.html" target="_blank">An
-                Ninh</a></li>
-        <li>
-            <a href="http://dicom.vn/am-thanh-da-vung-chat-luong-tai-dicom-smarthome-ct44.html" target="_blank">&Acirc;m
-                Thanh</a></li>
-    </ul>
-</div>
-<!-- nav-index-bottom -->
-
-<div class="clear"></div>
-<!-- Trai nghiem -->
-<div class="container-fluid trainghiem box_fix"
-     style="background: url(http://dicom.vn/upload/<?= Yii::$app->request->getBaseUrl() ?>/images/banner/banner-nha-thong-minh-dicom%20copy-min.png) top left no-repeat;">
-    <div class="row">
+<?php
+/** @var News $product_hot */
+if ($product_hot) {
+    ?>
+    <!-- Ung Dung -->
+    <div class="container-fluid ungdung-index box_fix">
         <div class="container">
             <div class="row">
-                <h3 class="title-trainghiem title_gp">TRẢI NGHIỆM</h3>
-                <div class="slide-trainghiem owl-carousel">
-                    <div class="item">
-                        <div class="item-inner">
-                            <a href="javascript:;" data-toggle="modal" data-target="#myModal15">
-                                <img src="http://dicom.vn/upload/<?= Yii::$app->request->getBaseUrl() ?>/images/video/trai-nghiem-nha-thong-minh-dicom-2.png"
-                                     alt="" class="img-responsive">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-inner">
-                            <a href="javascript:;" data-toggle="modal" data-target="#myModal18">
-                                <img src="http://dicom.vn4u.vn/upload/<?= Yii::$app->request->getBaseUrl() ?>/images/video/lap-dat-nha-thong-minh-dicom.png"
-                                     alt="" class="img-responsive">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-inner">
-                            <a href="javascript:;" data-toggle="modal" data-target="#myModal23">
-                                <img src="http://dicom.vn/upload/<?= Yii::$app->request->getBaseUrl() ?>/images/video/penthouse-city-garden-noi-that.jpg"
-                                     alt=""
-                                     class="img-responsive">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-inner">
-                            <a href="javascript:;" data-toggle="modal" data-target="#myModal11">
-                                <img src="http://dicom.vn/upload/<?= Yii::$app->request->getBaseUrl() ?>/images/video/video-he-thong-am-thanh-bluetooth.png"
-                                     alt="" class="img-responsive">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-inner">
-                            <a href="javascript:;" data-toggle="modal" data-target="#myModal12">
-                                <img src="http://dicom.vn/upload/<?= Yii::$app->request->getBaseUrl() ?>/images/video/giai-phap-am-thanh-khach-san.png"
-                                     alt=""
-                                     class="img-responsive">
-                            </a>
-                        </div>
-                    </div>
+                <div class="col-sm-6 col-xs-12 ungdung-index-left">
+                    <h2>
+                        <span style="color:#0789c7;"><span><?= $product_hot->title ?></h2>
+                    <p> <?= $product_hot->description ?></p>
+                    <a href="<?= Url::to(['site/detail-new', 'id' => $product_hot->id]) ?>" class="view-detail">Xem Chi
+                        Tiết</a>
                 </div>
-                <script type="text/javascript">
-                    $(document).ready(function () {
-                        $(".slide-trainghiem").owlCarousel({
-                            items: 3,
-                            navigation: false
-                        });
-                    });
-                </script>
+                <div class="col-sm-6 col-xs-12 ungdung-index-right">
+                    <img src="<?= $product_hot->getImageLink() ?>"
+                         class="img-responsive">
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Modalvideo -->
-<div id="myModal15" class="modal fade modal-video" role="dialog">
-    <div class="modal-dialog">
-        <button type="button" class="close" data-dismiss="modal"></button>
-        <div class="modal-content">
-            <iframe allowfullscreen frameborder="0" width="660" height="415"
-                    src="http://www.youtube.com/embed/6iU2esVq1As"></iframe>
-        </div>
-    </div>
-</div>
-<div id="myModal18" class="modal fade modal-video" role="dialog">
-    <div class="modal-dialog">
-        <button type="button" class="close" data-dismiss="modal"></button>
-        <div class="modal-content">
-            <iframe allowfullscreen frameborder="0" width="660" height="415"
-                    src="http://www.youtube.com/embed/2K7TqjFliZQ"></iframe>
-        </div>
-    </div>
-</div>
-<div id="myModal23" class="modal fade modal-video" role="dialog">
-    <div class="modal-dialog">
-        <button type="button" class="close" data-dismiss="modal"></button>
-        <div class="modal-content">
-            <iframe allowfullscreen frameborder="0" width="660" height="415"
-                    src="http://www.youtube.com/embed/RTPxx-b4dCs"></iframe>
-        </div>
-    </div>
-</div>
-<div id="myModal11" class="modal fade modal-video" role="dialog">
-    <div class="modal-dialog">
-        <button type="button" class="close" data-dismiss="modal"></button>
-        <div class="modal-content">
-            <iframe allowfullscreen frameborder="0" width="660" height="415"
-                    src="http://www.youtube.com/embed/yIVmTem_ii8"></iframe>
-        </div>
-    </div>
-</div>
-<div id="myModal12" class="modal fade modal-video" role="dialog">
-    <div class="modal-dialog">
-        <button type="button" class="close" data-dismiss="modal"></button>
-        <div class="modal-content">
-            <iframe allowfullscreen frameborder="0" width="660" height="415"
-                    src="http://www.youtube.com/embed/d3a_6Ow47s0"></iframe>
-        </div>
-    </div>
-</div>
-<!-- End Modalvideo -->
-
-<div class="clear"></div>
+    <?php
+}
+// Doạn dưới đẩy ra phần trải nghiệm
+//echo  \frontend\widgets\ExperienceWidget::widget();
+?>
 <!--PROJECT DONE -->
 <?= \frontend\widgets\FindPartner::widget() ?>
 <div class="container-fluid bottom_content">
@@ -273,11 +134,11 @@ use yii\helpers\Url;
                 </div>
                 <div class="col-md-4 sup_index  cell_why_index">
                     <div class="cell_why_inner">
-                        <img src="http://dicom.vn/upload/<?= Yii::$app->request->getBaseUrl() ?>/images/about/TRANG%20CHU/LIST/2.jpg"/>
-                        <p class="tit_sup">DICOM IOT</p>
+                        <img src="<?= $info->getImageLink() ?>"/>
+                        <p class="tit_sup"><?= Yii::$app->name ?></p>
                         <ul class="lisst_bot">
-                            <li><a href="http://dicom.vn/gioi-thieu.html">Giới thiệu về công ty DICOM</a></li>
-                            <li><a href="http://dicom.vn/gioi-thieu#why">Tại sao bạn nên sử dụng sản phẩm của DICOM</a>
+                            <li><a href="<?= Url::to(['site/about']) ?>">Giới thiệu về công ty DICOM</a></li>
+                            <li><a href="<?= Url::home() ?>#list-products">Sản phẩm</a>
                             </li>
                         </ul>
                     </div>
@@ -287,40 +148,12 @@ use yii\helpers\Url;
                         <img src="http://dicom.vn/upload/<?= Yii::$app->request->getBaseUrl() ?>/images/icon/DICOM_05.png"/>
                         <p class="tit_sup">Cơ hội khởi nghiệp</p>
                         <ul class="lisst_bot">
-                            <li><a href="">Cơ hội phát triển đầy triển vọng với DICOM</a></li>
+                            <li><a href="">Cơ hội phát triển đầy triển vọng với <?= Yii::$app->name ?></a></li>
                             <li><a href="">Chính sách nhân sự hướng tới sự phát triển con người</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="clear_edit"></div>
-                <!--                <div class="col-md-4 sup_index border_top_why cell_why_index">-->
-                <!--                    <div class="cell_why_inner">-->
-                <!--                        <img src="http://dicom.vn/upload/<?= Yii::$app->request->getBaseUrl() ?>/images/icon/DICOM_13.png"/>-->
-                <!--                        <p class="tit_sup">Hướng dẫn lắp đặt</p>-->
-                <!--                        <ul class="lisst_bot">-->
-                <!--                            <li><a href="http://dicom.vn/ho-tro-ki-thuat.html">Tài liệu hướng dẫn sử dụng và lắp đặt</a>-->
-                <!--                            </li>-->
-                <!--                        </ul>-->
-                <!--                    </div>-->
-                <!--                </div>-->
-                <!--                <div class="col-md-4 sup_index border_top_why cell_why_index">-->
-                <!--                    <div class="cell_why_inner">-->
-                <!--                        <img src="http://dicom.vn/upload/<?= Yii::$app->request->getBaseUrl() ?>/images/icon/DICOM_15.png"/>-->
-                <!--                        <p class="tit_sup">Trở thành đối tác của DICOM</p>-->
-                <!--                        <ul class="lisst_bot">-->
-                <!--                            <li><a href="http://dicom.vn/chinh-sach-doi-tac.html">Chính sách đối tác</a></li>-->
-                <!--                        </ul>-->
-                <!--                    </div>-->
-                <!--                </div>-->
-                <!--                <div class="col-md-4 sup_index border_top_why cell_why_index">-->
-                <!--                    <div class="cell_why_inner">-->
-                <!--                        <img src="http://dicom.vn/upload/<?= Yii::$app->request->getBaseUrl() ?>/images/icon/DICOM_17.png"/>-->
-                <!--                        <p class="tit_sup">Cập nhật tin tức DICOM IOT</p>-->
-                <!--                        <ul class="lisst_bot">-->
-                <!--                            <li><a href="http://dicom.vn/tin-tuc.html">Tin tức</a></li>-->
-                <!--                        </ul>-->
-                <!--                    </div>-->
-                <!--                </div>-->
             </div>
         </div>
     </div>

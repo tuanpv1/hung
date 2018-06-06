@@ -75,7 +75,11 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-
+        $product_hot = News::find()
+            ->andWhere(['status' => News::STATUS_ACTIVE])
+            ->andWhere(['type' => News::TYPE_PRODUCT])
+            ->orderBy(['id' => SORT_DESC])
+            ->one();
         $about = News::findOne(['type' => News::TYPE_ABOUT,'status' => News::STATUS_ACTIVE]);
         $listProducts = News::find()
             ->andWhere(['type' => News::TYPE_PRODUCT])
@@ -88,6 +92,7 @@ class SiteController extends Controller
             'info' => $info,
             'about' => $about,
             'listProducts' => $listProducts,
+            'product_hot' => $product_hot
         ]);
     }
 
