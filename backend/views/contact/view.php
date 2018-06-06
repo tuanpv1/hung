@@ -33,7 +33,17 @@ $this->params['breadcrumbs'][] = $this->title;
                     'model' => $model,
                     'attributes' => [
                         'title',
+                        [
+                            'attribute' => 'image',
+                            'format' => 'html',
+                            'value' => Html::img(Yii::getAlias('@web') . "/" . Yii::getAlias('@image_contact') . "/" . $model->image, ['height' => '200px']),
+                        ],
                         'content:html',
+                        [
+                            'attribute' => 'map',
+                            'format' => 'raw',
+                            'value' => $model->map,
+                        ],
                     ],
                 ]) ?>
             </div>

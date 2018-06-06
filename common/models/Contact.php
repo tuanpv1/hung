@@ -1,8 +1,8 @@
 <?php
 
 namespace common\models;
-
 use Yii;
+use yii\helpers\Url;
 
 /**
  * This is the model class for table "contact".
@@ -10,6 +10,8 @@ use Yii;
  * @property int $id
  * @property string $title
  * @property string $content
+ * @property string $map
+ * @property string $image
  */
 class Contact extends \yii\db\ActiveRecord
 {
@@ -29,7 +31,8 @@ class Contact extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['content'], 'string'],
+            [['content', 'map', 'image'], 'string'],
+            [['content', 'map', 'image', 'title'], 'required'],
             [['title'], 'string', 'max' => 255],
         ];
     }
@@ -43,6 +46,12 @@ class Contact extends \yii\db\ActiveRecord
             'id' => 'ID',
             'title' => 'Title',
             'content' => 'Content',
+            'map' => 'Bản đồ',
         ];
+    }
+
+    public function getImageLink()
+    {
+        return $this->image ? Url::to(Yii::getAlias('@web') . DIRECTORY_SEPARATOR . Yii::getAlias('@image_contact') . DIRECTORY_SEPARATOR . $this->image, true) : '';
     }
 }

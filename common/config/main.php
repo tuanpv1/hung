@@ -6,6 +6,8 @@ $config = [
     'language' => 'vi', /**  set target language to be vi */
     'aliases' => [
         '@image_news' => 'staticdata/image_news',
+        '@image_contact' => 'staticdata/image_contact',
+        '@file' => 'staticdata/file',
     ],
     'components' => [
         'cache' => [

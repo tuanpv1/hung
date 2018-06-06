@@ -17,6 +17,11 @@ use yii\helpers\Url;
  * @property string $address
  * @property string $facebook
  * @property string $email
+ * @property string $skype1
+ * @property string $skype2
+ * @property string $youtube
+ * @property string $google
+ * @property string $phone_support
  */
 class Info extends \yii\db\ActiveRecord
 {
@@ -37,7 +42,11 @@ class Info extends \yii\db\ActiveRecord
     {
         return [
             [['content'], 'string'],
-            [['title', 'image_display', 'description', 'phone', 'address', 'facebook', 'email'], 'string', 'max' => 255],
+            [
+                ['title', 'image_display', 'description', 'phone', 'address',
+                    'facebook', 'email', 'phone_support', 'skype1', 'skype2', 'youtube', 'google'],
+                'string', 'max' => 255
+            ],
         ];
     }
 
@@ -52,9 +61,14 @@ class Info extends \yii\db\ActiveRecord
             'image_display' => 'Hình ảnh',
             'description' => 'Mô tả ngắn',
             'content' => 'Nội dung',
-            'phone' => 'Số điện thoại',
+            'phone' => 'Hotline',
             'address' => 'Địa chỉ',
             'facebook' => 'Facebook',
+            'phone_support' => 'Số điện thoại hỗ trợ kĩ thuật',
+            'youtube' => 'Youtube link',
+            'google' => 'Google+ link',
+            'skype1' => 'Id skype hỗ trợ kĩ thuật 1',
+            'skype2' => 'Id skype hỗ trợ kĩ thuật 2',
         ];
     }
 

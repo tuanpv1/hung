@@ -7,6 +7,7 @@ use common\models\Contact;
 use common\models\HomeSolution;
 use common\models\Info;
 use common\models\News;
+use common\models\Subscriber;
 use frontend\models\ContactForm;
 use frontend\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
@@ -122,14 +123,14 @@ class SiteController extends Controller
     public function actionContact()
     {
         $contact = Contact::find()->orderBy(['id'=>SORT_DESC])->one();
-        $related_post = News::find()
-            ->andWhere(['status' => Category::STATUS_ACTIVE])
-            ->orderBy(['updated_at'=>SORT_DESC])
-            ->limit(4)
-            ->all();
+//        $related_post = News::find()
+//            ->andWhere(['status' => Category::STATUS_ACTIVE])
+//            ->orderBy(['updated_at'=>SORT_DESC])
+//            ->limit(4)
+//            ->all();
         return $this->render('contact', [
             'contact' => $contact,
-            'related_post' => $related_post,
+//            'related_post' => $related_post,
         ]);
     }
 
@@ -206,20 +207,11 @@ class SiteController extends Controller
         }
     }
 
-    public function actionListCategory()
+    public function actionSupportIt()
     {
-        $listCats = Category::findAll(['status' => Category::STATUS_ACTIVE]);
-        $listNews = News::find()->andWhere(['status' => Category::STATUS_ACTIVE]);
-        $countQuery = clone $listNews;
-        $pages = new Pagination(['totalCount' => $countQuery->count()]);
-        $pageSize = Yii::$app->params['page_size'];
-        $pages->setPageSize($pageSize);
-        $models = $listNews->offset($pages->offset)
-            ->limit(10)->all();
-        return $this->render('list-category', [
-            'listCats' => $listCats,
-            'listNews' => $models,
-            'pages' => $pages,
+        $info = Info::findOne(Info::ID);
+        return $this->render('support-it', [
+            'info' => $info,
         ]);
     }
 
@@ -240,20 +232,18 @@ class SiteController extends Controller
         ]);
     }
 
-    public function actionDetailSolution($id)
-    {
-        $new = HomeSolution::findOne($id);
-        if (!$new) {
-            return $this->redirect(['site/index']);
+    public function actionAddSubscriber(){
+        $model = new Subscriber();
+        if ($model->load(Yii::$app->request->post())) {
+            if($model->save()){
+                Yii::$app->session->setFlash('success','Đăng kí thông tin hỗ trợ thành công');
+                return $this->redirect(['index']);
+            }else{
+                Yii::$app->session->setFlash('error','Đăng kí thông tin hỗ trợ không thành công');
+                Yii::error($model->getErrors());
+            }
         }
-        $related_post = News::find()
-            ->andWhere(['status' => Category::STATUS_ACTIVE])
-            ->limit(4)
-            ->all();
-        return $this->render('detail-news', [
-            'new' => $new,
-            'related_post' => $related_post,
-        ]);
+        return $this->redirect(['contact']);
     }
 
 

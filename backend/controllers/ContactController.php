@@ -8,6 +8,7 @@ use common\models\ContactSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * ContactController implements the CRUD actions for Contact model.
@@ -56,8 +57,24 @@ class ContactController extends Controller
     {
         $model = new Contact();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $image_display = UploadedFile::getInstance($model, 'image');
+            if ($image_display) {
+                $file_name = Yii::$app->user->id . '.' . uniqid() . time() . '.' . $image_display->extension;
+                $tmp = Yii::getAlias('@backend') . '/web/' . Yii::getAlias('@image_contact') . '/';
+                if ($image_display->saveAs($tmp . $file_name)) {
+                    $model->image = $file_name;
+                }
+            }
+            if ($model->save()) {
+                Yii::$app->getSession()->setFlash('success', 'Created');
+                return $this->redirect(['view', 'id' => $model->id]);
+            } else {
+                Yii::$app->getSession()->setFlash('error', 'Cannot created');
+                return $this->render('create', [
+                    'model' => $model,
+                ]);
+            }
         }
 
         return $this->render('create', [
@@ -74,9 +91,30 @@ class ContactController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        $old_image_display = $model->image;
+        if ($model->load(Yii::$app->request->post())) {
+            $image_display = UploadedFile::getInstance($model, 'image');
+            if ($image_display) {
+                $file_name = Yii::$app->user->id . '.' . uniqid() . time() . '.' . $image_display->extension;
+                $tmp = Yii::getAlias('@backend') . '/web/' . Yii::getAlias('@image_contact') . '/';
+                if ($image_display->saveAs($tmp . $file_name)) {
+//                    if (file_exists($tmp . $old_image_display)) {
+//                        unlink($tmp . $old_image_display);
+//                    }
+                    $model->image = $file_name;
+                }
+            } else {
+                $model->image = $old_image_display;
+            }
+            if ($model->update()) {
+                Yii::$app->getSession()->setFlash('success', 'Updated!');
+                return $this->redirect(['view', 'id' => $model->id]);
+            } else {
+                Yii::$app->getSession()->setFlash('error', 'Cannot updated');
+                return $this->render('create', [
+                    'model' => $model,
+                ]);
+            }
         }
 
         return $this->render('update', [

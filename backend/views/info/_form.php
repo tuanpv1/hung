@@ -42,6 +42,24 @@ $imageDisplayPreview = !$model->isNewRecord && !empty($model->image_display);
     ])->hint(Yii::t('app', 'Vui lòng tải hình ảnh có kích thước 1920*700 px để hiển thị tốt nhất '));
     ?>
 
+    <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'phone_support')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'address')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'facebook')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'google')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'youtube')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'skype1')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'skype2')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'description')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'content')->widget(\common\widgets\CKEditor::className(), [
@@ -50,15 +68,6 @@ $imageDisplayPreview = !$model->isNewRecord && !empty($model->image_display);
     $_SESSION['KCFINDER'] = array(
         'disabled' => false
     ); ?>
-
-
-    <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'address')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'facebook')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

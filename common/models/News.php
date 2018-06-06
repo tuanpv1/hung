@@ -24,6 +24,8 @@ use yii\helpers\Url;
  * @property integer $posted_id
  * @property integer $is_hot
  * @property integer $type
+ * @property integer $is_file
+ * @property string $file
  *
  */
 class News extends \yii\db\ActiveRecord
@@ -41,6 +43,7 @@ class News extends \yii\db\ActiveRecord
     const TYPE_NEWS = 1; // Danh cho tin tức nếu có
     const TYPE_PRODUCT = 2; // Dành cho sản phẩm
     const TYPE_ABOUT = 3; // Dành cho giới thiêu
+    const TYPE_PARTNER = 4; // Dành cho phần tìm kiếm đối tác
 
     public function getListStatus()
     {
@@ -83,8 +86,8 @@ class News extends \yii\db\ActiveRecord
     {
         return [
             [['content'], 'string'],
-            [['status', 'created_at', 'updated_at', 'is_slide', 'category_id', 'posted_id','is_hot','type'], 'integer'],
-            [['title'], 'string', 'max' => 255],
+            [['status', 'created_at', 'updated_at', 'is_slide', 'category_id', 'posted_id','is_hot','type','is_file'], 'integer'],
+            [['title','file'], 'string', 'max' => 255],
             [['title'], 'required'],
             [['image_display'], 'required','on'=>'create'],
             [['description'], 'string', 'max' => 500],
@@ -118,7 +121,9 @@ class News extends \yii\db\ActiveRecord
             'category_id' => 'Category Name',
             'posted_id' => 'Posted Name',
             'is_hot' => Yii::t('app','Hiển thị trang chủ'),
-            'icon'=>Yii::t('app','Icon')
+            'icon'=>Yii::t('app','Icon'),
+            'is_file'=>Yii::t('app','Is file'),
+            'file'=>Yii::t('app','File'),
         ];
     }
 
@@ -157,5 +162,10 @@ class News extends \yii\db\ActiveRecord
     {
         return $this->icon ? Url::to(Yii::getAlias('@web') . DIRECTORY_SEPARATOR . Yii::getAlias('@image_news') . DIRECTORY_SEPARATOR . $this->icon, true) : '';
 
+    }
+
+    public function getFile()
+    {
+        return $this->icon ? Url::to(Yii::getAlias('@web') . DIRECTORY_SEPARATOR . Yii::getAlias('@file') . DIRECTORY_SEPARATOR . $this->file, true) : '';
     }
 }

@@ -134,6 +134,14 @@ $arrlang = array();
                     'url' => ['info/view', 'id' => Info::ID],
                 ],
                 [
+                    'label' => Yii::t('app', 'QL Đăng kí hỗ trợ'),
+                    'url' => ['subscriber/index'],
+                ],
+                [
+                    'label' => Yii::t('app', 'QL Tìm kiếm đối tác'),
+                    'url' => ['partner/index'],
+                ],
+                [
                     'label' => Yii::t('app', 'QL Liên hệ'),
                     'url' => ['contact/view'],
                 ],

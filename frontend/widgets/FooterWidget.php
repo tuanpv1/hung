@@ -23,15 +23,11 @@ class FooterWidget extends Widget
 
     public function run()
     {
-        $category = Category::find()->andWhere(['status'=>Category::STATUS_ACTIVE])->limit(6)->all();
         $info = Info::findOne(Info::ID);
         return $this->render('footer',[
             'info'=> $info,
-            'listCategory'=>$category,
         ]);
     }
-
-
 
     public static function actionFoot(){
         $f = new FooterWidget();

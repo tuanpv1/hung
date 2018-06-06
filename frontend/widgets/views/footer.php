@@ -19,7 +19,7 @@ use yii\helpers\Url;
             <ul class="menu menu2">
                 <li class="active_menu"><a href="<?= Url::home() ?>">Trang chủ</a></li>
                 <li class=""><a href="<?= Url::to(['site/about']) ?>">Giới thiệu </a></li>
-                <li class=""><a href="<?= Url::to(['site/product']) ?>">Sản phẩm</a></li>
+                <li class=""><a href="<?= Url::home() ?>#list-products">Sản phẩm</a></li>
                 <li class=""><a href="<?= Url::to(['site/support-it']) ?>">Hỗ trợ kĩ thuật</a></li>
                 <li class=""><a href="<?= Url::to(['site/contact']) ?>">Liên hệ</a></li>
             </ul>
@@ -36,11 +36,14 @@ use yii\helpers\Url;
                     </span>
                 </p>
                 <p style="text-align: center;">
-                    <img alt="" src="<?= Yii::$app->request->getBaseUrl() ?>/images/DICOM_23(1).png" style="width: 25px; height: 22px;"/> <?= $info->address ?></p>
+                    <img alt="" src="<?= Yii::$app->request->getBaseUrl() ?>/images/DICOM_23(1).png"
+                         style="width: 25px; height: 22px;"/> <?= $info->address ?></p>
                 <p style="text-align: center;">
-                    <img alt="" src="<?= Yii::$app->request->getBaseUrl() ?>/images/DICOM_30.png" style="width: 19px; height: 17px;"/>: <?= $info->phone ?>
+                    <img alt="" src="<?= Yii::$app->request->getBaseUrl() ?>/images/DICOM_30.png"
+                         style="width: 19px; height: 17px;"/>: <?= $info->phone ?>
                     &nbsp; &nbsp;&nbsp;
-                    <img alt="" src="<?= Yii::$app->request->getBaseUrl() ?>/images/DICOM_27.png" style="width: 22px; height: 16px;"/>: <?= $info->email ?>
+                    <img alt="" src="<?= Yii::$app->request->getBaseUrl() ?>/images/DICOM_27.png"
+                         style="width: 22px; height: 16px;"/>: <?= $info->email ?>
                 </p>
             </div>
         </div>
@@ -52,16 +55,22 @@ use yii\helpers\Url;
             </div>
             <div class="col-md-6 left_ftoooter">
                 <ul class="social_bottom">
-                    <li><a href="<?= $info->facebook ?>" target="_blank"><img src="<?= Yii::$app->request->getBaseUrl() ?>/images/face1-min.png" alt="Facebook"/></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCxJYFaIEY99YvxK2m0CNDEw" target="_blank">
-                            <img src="<?= Yii::$app->request->getBaseUrl() ?>/images/you1-min.png" alt="Youtube"/></a></li>
                     <li>
-                        <a href="https://plus.google.com/114805154313563931884/about?_ga=1.217388630.1330760275.1476754655"
-                           target="_blank"><img src="<?= Yii::$app->request->getBaseUrl() ?>/images/gg1-min.png" alt="Google+"/></a></li>
+                        <a href="<?= $info->facebook ? $info->facebook : '#' ?>" target="_blank">
+                            <img src="<?= Yii::$app->request->getBaseUrl() ?>/images/face1-min.png" alt="Facebook"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?= $info->youtube ? $info->youtube : '#' ?>" target="_blank">
+                            <img src="<?= Yii::$app->request->getBaseUrl() ?>/images/you1-min.png" alt="Youtube"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?= $info->google ? $info->google : '#' ?>" target="_blank">
+                            <img src="<?= Yii::$app->request->getBaseUrl() ?>/images/gg1-min.png" alt="Google+"/>
+                        </a>
+                    </li>
                 </ul>
-            </div>
-            <div class="col-md-6">
-
             </div>
         </div>
     </div>
